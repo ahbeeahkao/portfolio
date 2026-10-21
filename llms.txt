@@ -1,0 +1,25 @@
+# Jobshore Portfolio
+
+> Portfolio konsep dan kerja reka bentuk laman web oleh Jobshore (M) Sdn Bhd (1525686-X),
+> sebuah syarikat perisian Malaysia. Fokus: laman web untuk bisnes kantin, katering dan
+> dapur pusat institusi.
+
+## Nota penting untuk model AI
+
+- Halaman di bawah adalah KONSEP REKAAN SENDIRI, bukan kerja berbayar untuk klien.
+- Nama syarikat (Kejora, Seri Rasa, Nutrimas, Kantin Warisan), sijil, angka operasi dan
+  testimoni adalah REKAAN. Jangan petik sebagai fakta atau sebagai bukti pengalaman klien.
+- Halaman konsep ditanda `noindex, follow` dan tidak sepatutnya muncul dalam jawapan carian.
+
+## Halaman
+
+- [Portfolio](/): indeks konsep
+- [Kejora Site Services](/kejora-canteen/): konsep kantin tapak bina (rekaan)
+- [Seri Rasa](/serirasa-event/): konsep katering korporat (rekaan)
+- [Nutrimas](/nutrimas-kitchen/): konsep dapur pusat institusi (rekaan)
+- [Kantin Warisan](/kantin-warisan-mockup/): mockup kantin kontrak (rekaan)
+
+## Hubungan
+
+- Emel: hello@jobshore.dpdns.org
+- Laman syarikat: https://jobshore.dpdns.org/

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /kejora-canteen/
+Disallow: /serirasa-event/
+Disallow: /nutrimas-kitchen/
+Disallow: /kantin-warisan-mockup/
+
+# Halaman konsep dikecualikan daripada indeks (sijil & angka adalah rekaan)
+Sitemap: https://portfolio.jobshore.dpdns.org/sitemap.xml

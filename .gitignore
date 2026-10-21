@@ -1,0 +1,19 @@
+# macOS / Windows
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Build artefacts (regenerate with build/build.py)
+build/shots/
+
+# Local tooling
+node_modules/
+.playwright-cli/
+__pycache__/
+*.pyc
+.venv/
