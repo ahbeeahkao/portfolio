@@ -208,6 +208,10 @@
           "fictional area/hours facts",
           "privacy/expectations note"
         ]
+      },
+      "navigationTreatment": {
+        "treatment": "Ceremonial full-width masthead",
+        "behavior": "Horizontal links remain visible in a dark editorial header at all sizes; mobile reflows to a compact vertical stack."
       }
     },
     {
@@ -388,6 +392,10 @@
           "modesty-specific select options",
           "expectations note"
         ]
+      },
+      "navigationTreatment": {
+        "treatment": "Centered atelier masthead",
+        "behavior": "Wordmark and visible link row are centered as a calm two-level header; links wrap centrally on mobile."
       }
     },
     {
@@ -562,6 +570,10 @@
           "sample facts",
           "expectations note"
         ]
+      },
+      "navigationTreatment": {
+        "treatment": "Left-side navigation rail",
+        "behavior": "Wide screens use a fixed, full-height left rail with vertically stacked links; below 1000px it returns to a normal in-flow header."
       }
     },
     {
@@ -728,6 +740,10 @@
           "four preparation tiles beside wide form",
           "pre-send expectations note"
         ]
+      },
+      "navigationTreatment": {
+        "treatment": "Persistent bottom navigation dock",
+        "behavior": "Links stay in a fixed bottom dock; at narrow widths the dock scrolls horizontally and the language control is offset above it."
       }
     },
     {
@@ -896,6 +912,10 @@
           "sample facts",
           "expectations note"
         ]
+      },
+      "navigationTreatment": {
+        "treatment": "Right-side city atelier rail",
+        "behavior": "Wide screens use a fixed right rail with vertical links; below 1080px it returns to a normal in-flow header."
       }
     },
     {
@@ -1065,6 +1085,10 @@
           "package-specific select options",
           "expectations note"
         ]
+      },
+      "navigationTreatment": {
+        "treatment": "Native disclosure menu",
+        "behavior": "A keyboard-operable HTML details/summary control reveals route links; the same disclosure works on desktop and mobile."
       }
     },
     {
@@ -1244,6 +1268,10 @@
           "sample facts",
           "expectations note"
         ]
+      },
+      "navigationTreatment": {
+        "treatment": "Two-tier house masthead and tab strip",
+        "behavior": "Centered identity sits above a full-width horizontal tab strip; mobile keeps the strip horizontally scrollable."
       }
     }
   ]
