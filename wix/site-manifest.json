@@ -29,6 +29,12 @@
       "journey",
       "enquiry",
       "footer"
+    ],
+    "routes": [
+      "index.html",
+      "collections.html",
+      "experience.html",
+      "appointments.html"
     ]
   },
   "pages": [
@@ -40,7 +46,13 @@
       "accent": "#a33b38",
       "soft": "#f8f0eb",
       "dark": "#271d1b",
-      "sourceHtml": "bridal-chinese/index.html"
+      "sourceHtml": "bridal-chinese/index.html",
+      "routes": [
+        "bridal-chinese/index.html",
+        "bridal-chinese/collections.html",
+        "bridal-chinese/experience.html",
+        "bridal-chinese/appointments.html"
+      ]
     },
     {
       "slug": "bridal-malay",
@@ -50,7 +62,13 @@
       "accent": "#66705b",
       "soft": "#f0f1e9",
       "dark": "#20271f",
-      "sourceHtml": "bridal-malay/index.html"
+      "sourceHtml": "bridal-malay/index.html",
+      "routes": [
+        "bridal-malay/index.html",
+        "bridal-malay/collections.html",
+        "bridal-malay/experience.html",
+        "bridal-malay/appointments.html"
+      ]
     },
     {
       "slug": "bridal-indian",
@@ -60,7 +78,13 @@
       "accent": "#9b423b",
       "soft": "#f7eee7",
       "dark": "#281c1a",
-      "sourceHtml": "bridal-indian/index.html"
+      "sourceHtml": "bridal-indian/index.html",
+      "routes": [
+        "bridal-indian/index.html",
+        "bridal-indian/collections.html",
+        "bridal-indian/experience.html",
+        "bridal-indian/appointments.html"
+      ]
     },
     {
       "slug": "bridal-general",
@@ -70,7 +94,13 @@
       "accent": "#9a7a62",
       "soft": "#f4eee7",
       "dark": "#28211c",
-      "sourceHtml": "bridal-general/index.html"
+      "sourceHtml": "bridal-general/index.html",
+      "routes": [
+        "bridal-general/index.html",
+        "bridal-general/collections.html",
+        "bridal-general/experience.html",
+        "bridal-general/appointments.html"
+      ]
     },
     {
       "slug": "bridal-kl",
@@ -80,7 +110,13 @@
       "accent": "#a88b62",
       "soft": "#f3efe7",
       "dark": "#201e1b",
-      "sourceHtml": "bridal-kl/index.html"
+      "sourceHtml": "bridal-kl/index.html",
+      "routes": [
+        "bridal-kl/index.html",
+        "bridal-kl/collections.html",
+        "bridal-kl/experience.html",
+        "bridal-kl/appointments.html"
+      ]
     },
     {
       "slug": "bridal-johor",
@@ -90,7 +126,13 @@
       "accent": "#71816d",
       "soft": "#eef1e9",
       "dark": "#222820",
-      "sourceHtml": "bridal-johor/index.html"
+      "sourceHtml": "bridal-johor/index.html",
+      "routes": [
+        "bridal-johor/index.html",
+        "bridal-johor/collections.html",
+        "bridal-johor/experience.html",
+        "bridal-johor/appointments.html"
+      ]
     },
     {
       "slug": "bridal-penang",
@@ -100,7 +142,13 @@
       "accent": "#567b78",
       "soft": "#edf2ef",
       "dark": "#1e2928",
-      "sourceHtml": "bridal-penang/index.html"
+      "sourceHtml": "bridal-penang/index.html",
+      "routes": [
+        "bridal-penang/index.html",
+        "bridal-penang/collections.html",
+        "bridal-penang/experience.html",
+        "bridal-penang/appointments.html"
+      ]
     }
   ]
 }
