@@ -272,7 +272,7 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
   .topnote b{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:10px}
   .topnote p{color:rgba(255,255,255,.78);font-size:13.4px;line-height:1.62;margin:0}
 
-  .portfolio-controls{padding:44px 0 4px}.filter-heading{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:22px}.filter-heading h2{font-family:var(--serif2);font-size:clamp(1.7rem,3vw,2.4rem);margin-top:9px}.filter-heading>p{max-width:52ch;font-size:14px}.filters{display:grid;grid-template-columns:repeat(3,minmax(150px,1fr)) auto;gap:12px;align-items:end;padding:18px;background:#f7f5f0;border:1px solid var(--line)}.filters label{display:flex;flex-direction:column;gap:6px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.filters select{height:42px;padding:0 12px;border:1px solid var(--line);background:#fff;color:var(--ink);font:500 13px var(--sans)}.filter-reset{height:42px;padding:0 16px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:700 12px var(--sans);cursor:pointer}.filter-reset:hover{background:var(--ink);color:#fff}.filter-status{font-size:12px;margin:12px 0 0}.pcard[hidden]{display:none}
+  .portfolio-controls{padding:44px 0 4px}.filter-heading{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:22px}.filter-heading h2{font-family:var(--serif2);font-size:clamp(1.7rem,3vw,2.4rem);margin-top:9px}.filter-heading>p{max-width:52ch;font-size:14px}.filters{display:grid;grid-template-columns:repeat(2,minmax(150px,1fr)) auto;gap:12px;align-items:end;padding:18px;background:#f7f5f0;border:1px solid var(--line)}.filters label{display:flex;flex-direction:column;gap:6px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.filters select{height:42px;padding:0 12px;border:1px solid var(--line);background:#fff;color:var(--ink);font:500 13px var(--sans)}.filter-reset{height:42px;padding:0 16px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:700 12px var(--sans);cursor:pointer}.filter-reset:hover{background:var(--ink);color:#fff}.filter-status{font-size:12px;margin:12px 0 0}.portfolio-scope{font-size:12px;color:var(--muted);margin-top:7px;max-width:76ch}.pcard[hidden]{display:none}
   @media(max-width:700px){.filters{grid-template-columns:1fr 1fr}.filter-heading{align-items:start}}
   @media(max-width:460px){.filters{grid-template-columns:1fr}.filter-reset{width:100%}}
   .grid4{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,52px) clamp(24px,3vw,36px);
@@ -411,7 +411,7 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
     <div>
       <span class="kicker">Portfolio · Digital work</span>
       <h1>Digital experiences, shaped around how each business works.</h1>
-      <p>Explore selected website concepts and future client projects across industries. Filter by industry, implementation type or project type.</p>
+      <p>Explore selected website concepts and future client projects across industries. Filter by industry and implementation type.</p>
     </div>
     <div class="topnote">
       <b>How to read this portfolio</b>
@@ -422,14 +422,14 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
 
 <main class="wrap">
   <section class="portfolio-controls" aria-labelledby="work-heading">
-    <div class="filter-heading"><div><span class="kicker">Explore</span><h2 id="work-heading">Selected work</h2></div><p>Browse by what the business does, what we build, and whether the work is a concept or a client project.</p></div>
+    <div class="filter-heading"><div><span class="kicker">Explore</span><h2 id="work-heading">Selected work</h2></div><p>Browse by industry and implementation type.</p></div>
     <div class="filters" role="group" aria-label="Filter portfolio">
       <label>Industry<select id="filter-industry"><option value="all">All industries</option><option value="food-service">Food service</option><option value="bridal-fashion">Bridal &amp; fashion</option><option value="construction-facilities">Construction &amp; facilities</option><option value="events-hospitality">Events &amp; hospitality</option><option value="healthcare-institutions">Healthcare &amp; institutions</option></select></label>
       <label>Implementation type<select id="filter-implementation"><option value="all">All implementation types</option><option value="website">Website</option><option value="ordering-flow">Ordering flow</option><option value="operations-portal">Operations portal</option></select></label>
-      <label>Project type<select id="filter-project"><option value="all">All project types</option><option value="concept">Concept</option><option value="client">Client project</option></select></label>
       <button class="filter-reset" id="filter-reset" type="button">Clear filters</button>
     </div>
     <p class="filter-status" id="filter-status" aria-live="polite">Showing all 11 projects</p>
+    <p class="portfolio-scope">Current concepts showcase the Web &amp; Mobile App Development pillar through website-design prototypes. Other service pillars are not represented by these examples.</p>
   </section>
   <div class="grid4" id="portfolio-grid">
     
@@ -572,7 +572,7 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
 </script>
 
 <script>
-(function(){var fields=[document.getElementById('filter-industry'),document.getElementById('filter-implementation'),document.getElementById('filter-project')],cards=Array.prototype.slice.call(document.querySelectorAll('#portfolio-grid .pcard')),status=document.getElementById('filter-status');function update(){var shown=0;cards.forEach(function(card){var match=fields.every(function(field){return field.value==='all'||card.dataset[field.id.replace('filter-','')]==field.value;});card.hidden=!match;if(match)shown++;});status.textContent='Showing '+shown+' of '+cards.length+' projects';}fields.forEach(function(field){field.addEventListener('change',update);});document.getElementById('filter-reset').addEventListener('click',function(){fields.forEach(function(field){field.value='all';});update();});update();})();
+(function(){var fields=[document.getElementById('filter-industry'),document.getElementById('filter-implementation')],cards=Array.prototype.slice.call(document.querySelectorAll('#portfolio-grid .pcard')),status=document.getElementById('filter-status');function update(){var shown=0;cards.forEach(function(card){var match=fields.every(function(field){return field.value==='all'||card.dataset[field.id.replace('filter-','')]==field.value;});card.hidden=!match;if(match)shown++;});status.textContent='Showing '+shown+' of '+cards.length+' projects';}fields.forEach(function(field){field.addEventListener('change',update);});document.getElementById('filter-reset').addEventListener('click',function(){fields.forEach(function(field){field.value='all';});update();});update();})();
 </script>
 <script>
 function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'ms',includedLanguages:'en,ms,zh-CN',autoDisplay:false},'google_translate_element');}

@@ -18,7 +18,7 @@ If you run a canteen, catering or food-service business and would like to discus
 
 ### About this portfolio
 
-- Static HTML, one page file per project; no framework or build step.
+- Static HTML with separate Home, Collections, Experience and Appointments pages for each bridal concept; no framework or build step.
 - Shared page images are stored in `assets/img/`; social preview images are in `assets/og/`.
 - The hub has structured data identifying the portfolio and publisher.
 - All 11 concept / prospect pages are `noindex, follow`: direct-link viewing is possible, but they are not intended to appear in search results. The sitemap lists only the public hub.
@@ -55,7 +55,7 @@ Jika anda mengendalikan kantin, katering atau perniagaan perkhidmatan makanan da
 
 ### Tentang portfolio ini
 
-- HTML statik, satu fail halaman bagi setiap projek; tiada framework atau langkah build.
+- HTML statik dengan halaman berasingan Home, Collections, Experience dan Appointments untuk setiap konsep butik pengantin; tiada framework atau langkah build.
 - Imej halaman dikongsi dalam `assets/img/`; imej pratonton sosial berada dalam `assets/og/`.
 - Halaman utama mempunyai data berstruktur yang mengenal pasti portfolio dan penerbit.
 - Kesemua 11 halaman konsep / prospek ditetapkan `noindex, follow`: boleh dilihat melalui pautan terus, tetapi tidak dimaksudkan untuk muncul dalam hasil carian. Sitemap hanya menyenaraikan halaman utama.
@@ -92,7 +92,7 @@ Jobshore (M) Sdn Bhd 设计网站，帮助企业清楚介绍服务、解答潜�
 
 ### 关于本作品集
 
-- 纯静态 HTML，每个项目各自使用页面文件；无需框架或构建步骤。
+- 纯静态 HTML；每个新娘礼服概念均包含主页、系列、体验及预约独立页面；无需框架或构建步骤。
 - 页面共用图片存放于 `assets/img/`；社交媒体预览图存放于 `assets/og/`。
 - 作品集主页包含用于标识作品集及发布方的结构化数据。
 - 全部 11 个概念／潜在客户页面均设为 `noindex, follow`：可通过直接链接访问，但不面向搜索结果；站点地图只列出作品集主页。

@@ -2,7 +2,7 @@
 
 These pages are responsive design prototypes, not published Wix sites. Wix does not provide a generic one-click conversion of arbitrary static HTML into editable native Wix pages. The layouts can be recreated in Wix Editor / Wix Studio with native components, but they are not a Wix template file and cannot be imported as a finished native site by clicking once.
 
-To support a future one-click workflow, `wix/site-manifest.json` records the bridal concepts, section order, theme tokens, media paths and CTA/form behavior in a structured format. This is an import source for a future Wix-connected importer—not a Wix-native import file by itself. A true one-click native import would require a Wix app/automation built against Wix’s supported APIs and authorized by the customer for their Wix site. No import button is shown on these portfolio pages.
+To support a future one-click workflow, `wix/site-manifest.json` records the bridal concepts, four-page routes (Home, Collections, Experience, Appointments), section order, theme tokens, media paths and CTA/form behavior in a structured format. This is an import source for a future Wix-connected importer—not a Wix-native import file by itself. A true one-click native import would require a Wix app/automation built against Wix’s supported APIs and authorized by the customer for their Wix site. No import button is shown on these portfolio pages.
 
 ## Suggested Wix build mapping
 
