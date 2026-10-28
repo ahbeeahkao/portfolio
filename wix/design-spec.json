@@ -374,6 +374,10 @@
           768,
           390
         ]
+      },
+      "navigationTreatment": {
+        "treatment": "Ceremonial full-width masthead",
+        "behavior": "Horizontal links remain visible in a dark editorial header at all sizes; mobile reflows to a compact vertical stack."
       }
     },
     {
@@ -724,6 +728,10 @@
           768,
           390
         ]
+      },
+      "navigationTreatment": {
+        "treatment": "Centered atelier masthead",
+        "behavior": "Wordmark and visible link row are centered as a calm two-level header; links wrap centrally on mobile."
       }
     },
     {
@@ -1062,6 +1070,10 @@
           768,
           390
         ]
+      },
+      "navigationTreatment": {
+        "treatment": "Left-side navigation rail",
+        "behavior": "Wide screens use a fixed, full-height left rail with vertically stacked links; below 1000px it returns to a normal in-flow header."
       }
     },
     {
@@ -1386,6 +1398,10 @@
           768,
           390
         ]
+      },
+      "navigationTreatment": {
+        "treatment": "Persistent bottom navigation dock",
+        "behavior": "Links stay in a fixed bottom dock; at narrow widths the dock scrolls horizontally and the language control is offset above it."
       }
     },
     {
@@ -1712,6 +1728,10 @@
           768,
           390
         ]
+      },
+      "navigationTreatment": {
+        "treatment": "Right-side city atelier rail",
+        "behavior": "Wide screens use a fixed right rail with vertical links; below 1080px it returns to a normal in-flow header."
       }
     },
     {
@@ -2033,6 +2053,10 @@
           768,
           390
         ]
+      },
+      "navigationTreatment": {
+        "treatment": "Native disclosure menu",
+        "behavior": "A keyboard-operable HTML details/summary control reveals route links; the same disclosure works on desktop and mobile."
       }
     },
     {
@@ -2370,7 +2394,16 @@
           768,
           390
         ]
+      },
+      "navigationTreatment": {
+        "treatment": "Two-tier house masthead and tab strip",
+        "behavior": "Centered identity sits above a full-width horizontal tab strip; mobile keeps the strip horizontally scrollable."
       }
     }
-  ]
+  ],
+  "portfolioPreview": {
+    "treatment": "Each bridal project tile embeds its own local homepage in a scaled, non-interactive iframe within a browser-window frame.",
+    "interaction": "The full tile is a normal link to the corresponding local concept homepage; iframe pointer events are disabled.",
+    "reason": "Shows the website design system instead of a standalone fashion photograph."
+  }
 }

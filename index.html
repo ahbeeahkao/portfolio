@@ -402,6 +402,21 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
   ]
 }</script>
 <!-- /SEO:AEO -->
+
+<style id="bridal-website-previews">
+  /* Bridal cards show live concept websites in miniature rather than standalone gown photography. */
+  .site-preview-link{aspect-ratio:1.56;background:#eae5dc;padding:10px;box-sizing:border-box}
+  .site-preview-shell{display:flex;flex-direction:column;position:relative;width:100%;height:100%;overflow:hidden;background:#fff;border:1px solid #d5cec1;box-shadow:0 4px 18px #241a141a}
+  .site-browserbar{height:19px;flex:0 0 19px;display:flex;align-items:center;gap:4px;padding:0 8px;background:#f4f2ee;border-bottom:1px solid #e2ddd5;color:#756f65;font:700 7px/1 var(--sans);letter-spacing:.1em}
+  .site-browserbar i{width:5px;height:5px;border-radius:50%;background:#c4b9a9}
+  .site-browserbar span{margin-left:7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .site-preview-window{position:relative;display:block;flex:1;overflow:hidden;background:#fff}
+  .site-preview-window iframe{position:absolute;left:0;top:0;width:400%;height:400%;transform:scale(.25);transform-origin:top left;border:0;pointer-events:none;background:#fff}
+  .site-preview-label{position:absolute;top:25px;right:9px;z-index:2;background:#fffdf7e8;border:1px solid #ded5c8;padding:4px 7px;color:#51483d;font:700 7px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;pointer-events:none}
+  .site-preview-link:hover .site-preview-shell{box-shadow:0 10px 26px #241a1426}
+  .site-preview-link .pview{z-index:3}
+  @media(max-width:860px){.site-preview-link{aspect-ratio:1.5}.site-preview-link .pview{transform:translateY(0)}}
+</style>
 </head>
 <body>
 <div class="lang-switch" role="group" aria-label="Choose language"><button type="button" data-language="en" aria-pressed="true">EN</button><button type="button" data-language="ms" aria-pressed="false">BM</button><button type="button" data-language="zh-CN" aria-pressed="false">中文</button></div><div id="google_translate_element" aria-hidden="true"></div>
@@ -482,9 +497,13 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
         </div>
       </article>
       <article class="pcard" data-industry="bridal-fashion" data-implementation="website" data-project="concept">
-        <a class="pthumb" href="bridal-chinese/index.html">
-          <img src="assets/img/bridal-chinese.jpg" alt="Chinese Malaysian bridal atelier website concept">
-          <span class="pview">View concept →</span>
+        <a class="pthumb site-preview-link" href="bridal-chinese/index.html" aria-label="Open Hong Yue Bridal website concept">
+          <span class="site-preview-shell" aria-hidden="true">
+            <span class="site-browserbar"><i></i><i></i><i></i><span>CONCEPT WEBSITE · HONG YUE BRIDAL</span></span>
+            <span class="site-preview-window"><iframe src="bridal-chinese/index.html" title="Hong Yue Bridal bridal website concept preview" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></span>
+            <span class="site-preview-label">Website preview</span>
+          </span>
+          <span class="pview">Open website concept →</span>
         </a>
         <div class="pbody">
           <span class="peyebrow">Concept 05 — Bridal · Chinese Malaysian</span>
@@ -494,9 +513,13 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
         </div>
       </article>
       <article class="pcard" data-industry="bridal-fashion" data-implementation="website" data-project="concept">
-        <a class="pthumb" href="bridal-malay/index.html">
-          <img src="assets/img/bridal-malay.jpg" alt="Malay bridal studio website concept">
-          <span class="pview">View concept →</span>
+        <a class="pthumb site-preview-link" href="bridal-malay/index.html" aria-label="Open Seruni Bridal website concept">
+          <span class="site-preview-shell" aria-hidden="true">
+            <span class="site-browserbar"><i></i><i></i><i></i><span>CONCEPT WEBSITE · SERUNI BRIDAL</span></span>
+            <span class="site-preview-window"><iframe src="bridal-malay/index.html" title="Seruni Bridal bridal website concept preview" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></span>
+            <span class="site-preview-label">Website preview</span>
+          </span>
+          <span class="pview">Open website concept →</span>
         </a>
         <div class="pbody">
           <span class="peyebrow">Concept 06 — Bridal · Malay</span>
@@ -506,9 +529,13 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
         </div>
       </article>
       <article class="pcard" data-industry="bridal-fashion" data-implementation="website" data-project="concept">
-        <a class="pthumb" href="bridal-indian/index.html">
-          <img src="assets/img/bridal-indian.jpg" alt="Indian Malaysian bridal boutique website concept">
-          <span class="pview">View concept →</span>
+        <a class="pthumb site-preview-link" href="bridal-indian/index.html" aria-label="Open Aaroh Bridal House website concept">
+          <span class="site-preview-shell" aria-hidden="true">
+            <span class="site-browserbar"><i></i><i></i><i></i><span>CONCEPT WEBSITE · AAROH BRIDAL HOUSE</span></span>
+            <span class="site-preview-window"><iframe src="bridal-indian/index.html" title="Aaroh Bridal House bridal website concept preview" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></span>
+            <span class="site-preview-label">Website preview</span>
+          </span>
+          <span class="pview">Open website concept →</span>
         </a>
         <div class="pbody">
           <span class="peyebrow">Concept 07 — Bridal · Indian Malaysian</span>
@@ -518,19 +545,47 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
         </div>
       </article>
       <article class="pcard" data-industry="bridal-fashion" data-implementation="website" data-project="concept">
-        <a class="pthumb" href="bridal-general/index.html"><img src="assets/img/bridal-general.jpg" alt="Inclusive Malaysian bridal boutique website concept"><span class="pview">View concept →</span></a>
+        <a class="pthumb site-preview-link" href="bridal-general/index.html" aria-label="Open Ever After Bridal website concept">
+          <span class="site-preview-shell" aria-hidden="true">
+            <span class="site-browserbar"><i></i><i></i><i></i><span>CONCEPT WEBSITE · EVER AFTER BRIDAL</span></span>
+            <span class="site-preview-window"><iframe src="bridal-general/index.html" title="Ever After Bridal bridal website concept preview" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></span>
+            <span class="site-preview-label">Website preview</span>
+          </span>
+          <span class="pview">Open website concept →</span>
+        </a>
         <div class="pbody"><span class="peyebrow">Concept 08 — General bridal boutique</span><h3>Ever After Bridal</h3><p>An inclusive, style-first concept for silhouette discovery, fit conversations and wardrobe planning without assuming one standard look.</p><div class="chips"><span>Silhouette discovery</span><span>Fit &amp; comfort</span><span>Standalone website</span></div></div>
       </article>
       <article class="pcard" data-industry="bridal-fashion" data-implementation="website" data-project="concept">
-        <a class="pthumb" href="bridal-kl/index.html"><img src="assets/img/bridal-kl.jpg" alt="Kuala Lumpur bridal atelier website concept"><span class="pview">View concept →</span></a>
+        <a class="pthumb site-preview-link" href="bridal-kl/index.html" aria-label="Open Atelier Kuala website concept">
+          <span class="site-preview-shell" aria-hidden="true">
+            <span class="site-browserbar"><i></i><i></i><i></i><span>CONCEPT WEBSITE · ATELIER KUALA</span></span>
+            <span class="site-preview-window"><iframe src="bridal-kl/index.html" title="Atelier Kuala bridal website concept preview" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></span>
+            <span class="site-preview-label">Website preview</span>
+          </span>
+          <span class="pview">Open website concept →</span>
+        </a>
         <div class="pbody"><span class="peyebrow">Concept 09 — Kuala Lumpur</span><h3>Atelier Kuala</h3><p>A curated city-atelier concept with editorial product presentation and a deliberate consultation flow; no designer affiliation is claimed.</p><div class="chips"><span>Curated edit</span><span>City atelier</span><span>Standalone website</span></div></div>
       </article>
       <article class="pcard" data-industry="bridal-fashion" data-implementation="website" data-project="concept">
-        <a class="pthumb" href="bridal-johor/index.html"><img src="assets/img/bridal-johor.jpg" alt="Johor bridal studio website concept"><span class="pview">View concept →</span></a>
+        <a class="pthumb site-preview-link" href="bridal-johor/index.html" aria-label="Open Rona Bridal Studio website concept">
+          <span class="site-preview-shell" aria-hidden="true">
+            <span class="site-browserbar"><i></i><i></i><i></i><span>CONCEPT WEBSITE · RONA BRIDAL STUDIO</span></span>
+            <span class="site-preview-window"><iframe src="bridal-johor/index.html" title="Rona Bridal Studio bridal website concept preview" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></span>
+            <span class="site-preview-label">Website preview</span>
+          </span>
+          <span class="pview">Open website concept →</span>
+        </a>
         <div class="pbody"><span class="peyebrow">Concept 10 — Johor</span><h3>Rona Bridal Studio</h3><p>A fictional one-stop package concept to show how wardrobe, partner styling and optional event support could be explained clearly.</p><div class="chips"><span>Package concept</span><span>Johor</span><span>Standalone website</span></div></div>
       </article>
       <article class="pcard" data-industry="bridal-fashion" data-implementation="website" data-project="concept">
-        <a class="pthumb" href="bridal-penang/index.html"><img src="assets/img/bridal-penang.jpg" alt="Penang bridal boutique website concept"><span class="pview">View concept →</span></a>
+        <a class="pthumb site-preview-link" href="bridal-penang/index.html" aria-label="Open Juniper &amp; Lace website concept">
+          <span class="site-preview-shell" aria-hidden="true">
+            <span class="site-browserbar"><i></i><i></i><i></i><span>CONCEPT WEBSITE · JUNIPER &AMP; LACE</span></span>
+            <span class="site-preview-window"><iframe src="bridal-penang/index.html" title="Juniper &amp; Lace bridal website concept preview" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></span>
+            <span class="site-preview-label">Website preview</span>
+          </span>
+          <span class="pview">Open website concept →</span>
+        </a>
         <div class="pbody"><span class="peyebrow">Concept 11 — Penang</span><h3>Juniper &amp; Lace</h3><p>A detail-led studio concept for fabric, finishing and contemporary ceremony styling, with a heritage-inspired mood but no address or artisan claims.</p><div class="chips"><span>Fabric &amp; finish</span><span>Detail-led</span><span>Standalone website</span></div></div>
       </article>
   </div>
