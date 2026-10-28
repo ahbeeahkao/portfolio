@@ -19,10 +19,13 @@ If you run a canteen, catering or food-service business and would like to discus
 ### About this portfolio
 
 - Static HTML with separate Home, Collections, Experience and Appointments pages for each bridal concept; no framework or build step.
-- Shared page images are stored in `assets/img/`; social preview images are in `assets/og/`.
+- These are seven separate bridal shop website concepts—not seven recolors of one site. Each has its own fictional brand, navigation, layout, featured service scope, collection focus, fitting journey and enquiry choices.
+- Bridal shop identities, areas, hours, sample products, prices and appointment terms are fictional demonstration details for privacy; replace them with verified shop information before a real launch. Public contact in the mockups is Jobshore’s `hello@jobshore.dpdns.org` only.
+- Scope research drew on broad examples from Malaysia and Singapore bridal retail. The references and the distinction between inspiration and fictional shop claims are documented in `WIX-IMPLEMENTATION.md`. No real shop’s names, prices, policies, copy or imagery are used as concept details.
+- Each concept has a dedicated detail image in `assets/img/bridal-*-detail.jpg`; the primary hero images remain in `assets/img/`.
 - The hub has structured data identifying the portfolio and publisher.
-- All 11 concept / prospect pages are `noindex, follow`: direct-link viewing is possible, but they are not intended to appear in search results. The sitemap lists only the public hub.
-- Bridal pages have Wix-friendly section layouts. `WIX-IMPLEMENTATION.md` and `wix/site-manifest.json` provide a handoff for a future Wix workflow; they are not a native one-click Wix import.
+- Concept and prospect pages are `noindex, follow`: direct-link viewing is possible, but they are not intended to appear in search results. The sitemap lists only the public hub.
+- Bridal pages use Wix-recreatable section layouts. `WIX-IMPLEMENTATION.md`, `wix/site-manifest.json` and `wix/design-spec.json` provide a manual Wix Studio handoff for 1:1 visual reconstruction; they are not a Wix-native import or one-click deploy.
 - The language switcher uses automatic browser-side translation; translation quality may vary.
 
 ### Pages

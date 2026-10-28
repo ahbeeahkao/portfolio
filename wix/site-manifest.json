@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.0",
-  "purpose": "source manifest for a future Wix-connected importer",
+  "purpose": "manual Wix Studio reconstruction handoff and source manifest; not an import file",
   "nativeWixImportFile": false,
-  "note": "Wix does not natively import this manifest or arbitrary HTML as an editable site. A Wix app/automation must map these records to native pages after customer authorization.",
+  "note": "Use the static HTML and wix/design-spec.json to manually recreate each concept in Wix Studio with a 1:1 visual target. This manifest is not a Wix-native import file and no one-click deployment/importer is implemented or verified.",
   "languageTargets": [
     "en",
     "ms",
@@ -22,19 +22,34 @@
     "noPhoneOrWhatsApp": true,
     "footerDisclosure": "Self-initiated concept design, not paid client work.",
     "robots": "noindex, follow",
-    "sectionOrder": [
-      "hero",
-      "story",
-      "details",
-      "journey",
-      "enquiry",
-      "footer"
-    ],
     "routes": [
       "index.html",
       "collections.html",
       "experience.html",
       "appointments.html"
+    ],
+    "fictionalBusinessDetailDisclosure": "Shop identity, location, hours, sample styles, prices and appointment terms are fictional examples for privacy and demonstration.",
+    "sectionOrderVariesByConcept": true,
+    "inspirationOnly": true,
+    "noRealShopDetailsCopied": true,
+    "wixCompatibility": "manual Wix Studio reconstruction from native sections, containers, grids, menus, repeaters, accordions, images and forms",
+    "oneClickWixDeploy": false,
+    "fidelityReferenceViewports": [
+      {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "name": "tablet",
+        "width": 768,
+        "height": 1024
+      },
+      {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      }
     ]
   },
   "pages": [
@@ -52,7 +67,25 @@
         "bridal-chinese/collections.html",
         "bridal-chinese/experience.html",
         "bridal-chinese/appointments.html"
-      ]
+      ],
+      "detailImage": "assets/img/bridal-chinese-detail.jpg",
+      "layoutStyle": "editorial split hero, ceremonial red palette, structured collection cards",
+      "fictionalSampleDetails": true,
+      "navigationLabels": [
+        "Home",
+        "Ceremony Wardrobe",
+        "Tea Ceremony Guide",
+        "Family Fitting"
+      ],
+      "conceptScope": "Ceremony wardrobe centered on tea ceremony, family moments and reception styling.",
+      "homeSectionOrderVaries": true,
+      "pageTitles": {
+        "index": "Bridal Boutique Concept",
+        "collections": "Tea Ceremony & Reception Looks",
+        "experience": "Planning the Wedding Looks",
+        "appointments": "Family Fitting Enquiry"
+      },
+      "detailImageAlt": "Close-up of red silk and gold embroidery for a Chinese Malaysian bridal concept"
     },
     {
       "slug": "bridal-malay",
@@ -68,7 +101,25 @@
         "bridal-malay/collections.html",
         "bridal-malay/experience.html",
         "bridal-malay/appointments.html"
-      ]
+      ],
+      "detailImage": "assets/img/bridal-malay-detail.jpg",
+      "layoutStyle": "centered calm composition with arched hero image and modest styling cues",
+      "fictionalSampleDetails": true,
+      "navigationLabels": [
+        "Home",
+        "Gown Edit",
+        "Modest Styling",
+        "Fitting Request"
+      ],
+      "conceptScope": "Modest-first styling with sample coverage, hijab coordination and Nikah/celebration paths; no real services are claimed.",
+      "homeSectionOrderVaries": true,
+      "pageTitles": {
+        "index": "Bridal Boutique Concept",
+        "collections": "Modest Gowns & Styling",
+        "experience": "A Modest Styling Journey",
+        "appointments": "Plan a Gown Fitting"
+      },
+      "detailImageAlt": "Ivory modest bridal gown and coordinated hijab styling detail"
     },
     {
       "slug": "bridal-indian",
@@ -84,7 +135,25 @@
         "bridal-indian/collections.html",
         "bridal-indian/experience.html",
         "bridal-indian/appointments.html"
-      ]
+      ],
+      "detailImage": "assets/img/bridal-indian-detail.jpg",
+      "layoutStyle": "asymmetric image-first hero with ruby-and-gold editorial palette",
+      "fictionalSampleDetails": true,
+      "navigationLabels": [
+        "Home",
+        "Outfit Edit",
+        "Celebration Guide",
+        "Styling Consultation"
+      ],
+      "conceptScope": "Multi-event outfit planning across welcome, ceremony and reception, with drape and textile detail.",
+      "homeSectionOrderVaries": true,
+      "pageTitles": {
+        "index": "Bridal Boutique Concept",
+        "collections": "Looks Across the Celebrations",
+        "experience": "Ceremony-to-Reception Styling",
+        "appointments": "Plan a Styling Consultation"
+      },
+      "detailImageAlt": "Ruby fabric with antique-gold embroidery for an Indian Malaysian bridal concept"
     },
     {
       "slug": "bridal-general",
@@ -100,7 +169,25 @@
         "bridal-general/collections.html",
         "bridal-general/experience.html",
         "bridal-general/appointments.html"
-      ]
+      ],
+      "detailImage": "assets/img/bridal-general-detail.jpg",
+      "layoutStyle": "inclusive modular layout with overlapping editorial blocks",
+      "fictionalSampleDetails": true,
+      "navigationLabels": [
+        "Home",
+        "Find Your Style",
+        "How It Works",
+        "Book a Fitting"
+      ],
+      "conceptScope": "Inclusive silhouette discovery, fit/comfort conversations and wardrobe planning without assumed size or style.",
+      "homeSectionOrderVaries": true,
+      "pageTitles": {
+        "index": "Bridal Boutique Concept",
+        "collections": "Find Your Bridal Silhouette",
+        "experience": "A Fitting That Starts With You",
+        "appointments": "Explore Your Fitting"
+      },
+      "detailImageAlt": "A varied rail of bridal silhouettes in an inclusive boutique concept"
     },
     {
       "slug": "bridal-kl",
@@ -116,7 +203,25 @@
         "bridal-kl/collections.html",
         "bridal-kl/experience.html",
         "bridal-kl/appointments.html"
-      ]
+      ],
+      "detailImage": "assets/img/bridal-kl-detail.jpg",
+      "layoutStyle": "oversized city-atelier typography and full-width image composition",
+      "fictionalSampleDetails": true,
+      "navigationLabels": [
+        "The Atelier",
+        "The Edit",
+        "Atelier Process",
+        "Private Appointment"
+      ],
+      "conceptScope": "Curated city-atelier concept focused on editorial selection and a deliberate consultation; no designer relationships or bespoke services are claimed.",
+      "homeSectionOrderVaries": true,
+      "pageTitles": {
+        "index": "Bridal Boutique Concept",
+        "collections": "The Atelier Edit",
+        "experience": "From First Edit to Final Fit",
+        "appointments": "Request a Private Atelier Fitting"
+      },
+      "detailImageAlt": "Minimalist ivory couture gown in a contemporary bridal studio"
     },
     {
       "slug": "bridal-johor",
@@ -132,7 +237,25 @@
         "bridal-johor/collections.html",
         "bridal-johor/experience.html",
         "bridal-johor/appointments.html"
-      ]
+      ],
+      "detailImage": "assets/img/bridal-johor-detail.jpg",
+      "layoutStyle": "welcoming layout with rounded arch imagery and practical journey cues",
+      "fictionalSampleDetails": true,
+      "navigationLabels": [
+        "Home",
+        "Wedding Looks",
+        "Package Concept",
+        "Plan a Visit"
+      ],
+      "conceptScope": "Illustrative one-stop wedding package structure spanning bridal wardrobe, partner styling and optional event support; no package/service is real.",
+      "homeSectionOrderVaries": true,
+      "pageTitles": {
+        "index": "Bridal Boutique Concept",
+        "collections": "Wedding Wardrobe Options",
+        "experience": "Planning the Day Together",
+        "appointments": "Plan a Studio Visit"
+      },
+      "detailImageAlt": "A bridal fitting room and garment rail in a regional boutique concept"
     },
     {
       "slug": "bridal-penang",
@@ -148,7 +271,26 @@
         "bridal-penang/collections.html",
         "bridal-penang/experience.html",
         "bridal-penang/appointments.html"
-      ]
+      ],
+      "detailImage": "assets/img/bridal-penang-detail.jpg",
+      "layoutStyle": "framed editorial imagery and heritage-inspired, contemporary composition",
+      "fictionalSampleDetails": true,
+      "navigationLabels": [
+        "The Studio",
+        "Studio Edit",
+        "Craft & Care",
+        "Visit Planning"
+      ],
+      "conceptScope": "Detail-led contemporary styling with fabric, finishing and a heritage-inspired mood, without location or artisan claims.",
+      "homeSectionOrderVaries": true,
+      "pageTitles": {
+        "index": "Bridal Boutique Concept",
+        "collections": "Craft, Texture & Ceremony",
+        "experience": "A Studio Visit With Context",
+        "appointments": "Plan a Studio Consultation"
+      },
+      "detailImageAlt": "Close-up textile detail for a fictional Penang bridal concept"
     }
-  ]
+  ],
+  "designSpecPath": "wix/design-spec.json"
 }
