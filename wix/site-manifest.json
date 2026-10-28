@@ -1,40 +1,20 @@
 {
-  "schemaVersion": "1.0",
-  "purpose": "manual Wix Studio reconstruction handoff and source manifest; not an import file",
+  "schemaVersion": "2.0",
+  "purpose": "Manual Wix Studio recreation manifest for seven separate bridal shop website designs.",
   "nativeWixImportFile": false,
-  "note": "Use the static HTML and wix/design-spec.json to manually recreate each concept in Wix Studio with a 1:1 visual target. This manifest is not a Wix-native import file and no one-click deployment/importer is implemented or verified.",
-  "languageTargets": [
-    "en",
-    "ms",
-    "zh-CN"
-  ],
+  "oneClickWixDeploy": false,
+  "designSpecPath": "wix/design-spec.json",
+  "note": "Use the static HTML as the visual source of truth and the accompanying design-spec.json as a manual Wix Studio build guide. This is not a Wix import file; no Wix deployment has been implemented or verified.",
   "globalRules": {
-    "responsive": true,
-    "mobileBreakpointPx": 760,
-    "ctaTarget": "#borang",
-    "formFields": [
-      "name",
-      "email",
-      "date (optional)",
-      "message (optional)"
-    ],
-    "publicContact": "hello@jobshore.dpdns.org",
-    "noPhoneOrWhatsApp": true,
-    "footerDisclosure": "Self-initiated concept design, not paid client work.",
-    "robots": "noindex, follow",
     "routes": [
       "index.html",
       "collections.html",
       "experience.html",
       "appointments.html"
     ],
-    "fictionalBusinessDetailDisclosure": "Shop identity, location, hours, sample styles, prices and appointment terms are fictional examples for privacy and demonstration.",
-    "sectionOrderVariesByConcept": true,
-    "inspirationOnly": true,
-    "noRealShopDetailsCopied": true,
-    "wixCompatibility": "manual Wix Studio reconstruction from native sections, containers, grids, menus, repeaters, accordions, images and forms",
-    "oneClickWixDeploy": false,
-    "fidelityReferenceViewports": [
+    "responsive": true,
+    "sourceBreakpointPx": 760,
+    "referenceViewports": [
       {
         "name": "desktop",
         "width": 1440,
@@ -50,247 +30,1221 @@
         "width": 390,
         "height": 844
       }
-    ]
+    ],
+    "ctaTarget": "#borang",
+    "publicContact": "hello@jobshore.dpdns.org",
+    "noPhoneOrWhatsApp": true,
+    "robots": "noindex, follow",
+    "footerDisclosure": "Self-initiated concept design, not paid client work.",
+    "fictionalBusinessDetailDisclosure": "All shop identities, areas, hours, styles, prices, services and appointment terms are fictional examples for privacy and demonstration.",
+    "wixImplementation": "Manual Wix Studio rebuild with native sections, containers, grids, menus, repeaters, accordions, images and forms; match source at reference viewports."
   },
-  "pages": [
+  "sites": [
     {
       "slug": "bridal-chinese",
       "brand": "HONG YUE BRIDAL",
-      "market": "Chinese Malaysian bridal",
-      "image": "assets/img/bridal-chinese.jpg",
-      "accent": "#a33b38",
-      "soft": "#f8f0eb",
-      "dark": "#271d1b",
-      "sourceHtml": "bridal-chinese/index.html",
-      "routes": [
-        "bridal-chinese/index.html",
-        "bridal-chinese/collections.html",
-        "bridal-chinese/experience.html",
-        "bridal-chinese/appointments.html"
-      ],
-      "detailImage": "assets/img/bridal-chinese-detail.jpg",
-      "layoutStyle": "editorial split hero, ceremonial red palette, structured collection cards",
-      "fictionalSampleDetails": true,
-      "navigationLabels": [
-        "Home",
+      "market": "Chinese Malaysian bridal atelier",
+      "layoutClass": "skin-chinese",
+      "designDirection": "Ceremony-led editorial: asymmetrical red split hero, three-moment ribbon, framed story image, horizontal ritual timeline.",
+      "navLabels": [
+        "Atelier",
         "Ceremony Wardrobe",
-        "Tea Ceremony Guide",
+        "Ritual Guide",
         "Family Fitting"
       ],
-      "conceptScope": "Ceremony wardrobe centered on tea ceremony, family moments and reception styling.",
-      "homeSectionOrderVaries": true,
+      "theme": {
+        "dark": "#351719",
+        "ink": "#281d1b",
+        "soft": "#f8f0eb",
+        "accent": "#a33b38",
+        "paper": "#fffaf4"
+      },
+      "heroImage": "assets/img/bridal-chinese.jpg",
+      "detailImage": "assets/img/bridal-chinese-detail.jpg",
+      "fictionalScope": "A family-aware fitting guide for planning ceremonial looks and practical questions.",
       "pageTitles": {
-        "index": "Bridal Boutique Concept",
-        "collections": "Tea Ceremony & Reception Looks",
-        "experience": "Planning the Wedding Looks",
+        "collections": "Ceremony Wardrobe",
+        "experience": "The Family Fitting",
         "appointments": "Family Fitting Enquiry"
       },
-      "detailImageAlt": "Close-up of red silk and gold embroidery for a Chinese Malaysian bridal concept"
+      "routes": [
+        {
+          "file": "index.html",
+          "title": "Bridal Boutique Concept | HONG YUE BRIDAL",
+          "sectionSequence": [
+            {
+              "class": [
+                "hero"
+              ],
+              "firstText": "Chinese Malaysian bridal atelier",
+              "heading": "Tradition, in every moment."
+            },
+            {
+              "class": [],
+              "firstText": "A wardrobe in chapters",
+              "heading": "Tradition, a modern change, and a final look."
+            },
+            {
+              "class": [],
+              "firstText": "Fitting sequence",
+              "heading": "Three moments. One considered plan."
+            },
+            {
+              "class": [],
+              "firstText": "Fictional collection",
+              "heading": "Ceremony, with a point of view."
+            },
+            {
+              "class": [
+                "booking"
+              ],
+              "firstText": "Sample enquiry",
+              "heading": "Start with a conversation."
+            }
+          ]
+        },
+        {
+          "file": "collections.html",
+          "title": "Ceremony Wardrobe | HONG YUE BRIDAL",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Chinese Malaysian bridal atelier",
+              "heading": "Ceremony Wardrobe"
+            },
+            {
+              "class": [],
+              "firstText": "Ceremony wardrobe / sample edit",
+              "heading": "From the tea table to the last toast."
+            },
+            {
+              "class": [],
+              "firstText": "Continue planning",
+              "heading": "Want to ask about a detail?"
+            }
+          ]
+        },
+        {
+          "file": "experience.html",
+          "title": "The Family Fitting | HONG YUE BRIDAL",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Chinese Malaysian bridal atelier",
+              "heading": "The Family Fitting"
+            },
+            {
+              "class": [],
+              "firstText": "The family fitting",
+              "heading": "A calm plan for a full day."
+            },
+            {
+              "class": [],
+              "firstText": "Common questions",
+              "heading": "Common questions"
+            },
+            {
+              "class": [],
+              "firstText": "Next step",
+              "heading": "Ready to ask a question?"
+            }
+          ]
+        },
+        {
+          "file": "appointments.html",
+          "title": "Family Fitting Enquiry | HONG YUE BRIDAL",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Chinese Malaysian bridal atelier",
+              "heading": "Family Fitting Enquiry"
+            },
+            {
+              "class": [
+                "booking"
+              ],
+              "firstText": "Family fitting / sample details",
+              "heading": "Bring the people and questions that matter."
+            },
+            {
+              "class": [],
+              "firstText": "Before you send",
+              "heading": "Clear expectations."
+            }
+          ]
+        }
+      ],
+      "pageArchetypes": {
+        "home": [
+          "asymmetric red split hero with the ceremony CTA",
+          "three-part tea-table / family / reception ribbon",
+          "framed image and editorial story split",
+          "horizontal three-step ritual timeline",
+          "fictional collection cards",
+          "family-fitting enquiry form"
+        ],
+        "collections": [
+          "dark ceremony subhero",
+          "traditional ceremony-feature split",
+          "sample look list with example prices",
+          "fictional-price disclosure",
+          "enquiry CTA"
+        ],
+        "experience": [
+          "dark subhero",
+          "three-step family fitting timeline",
+          "FAQ accordion",
+          "enquiry CTA"
+        ],
+        "appointments": [
+          "dark subhero",
+          "two-column family-fitting copy and form",
+          "fictional area/hours facts",
+          "privacy/expectations note"
+        ]
+      }
     },
     {
       "slug": "bridal-malay",
       "brand": "SERUNI BRIDAL",
-      "market": "Malay bridal",
-      "image": "assets/img/bridal-malay.jpg",
-      "accent": "#66705b",
-      "soft": "#f0f1e9",
-      "dark": "#20271f",
-      "sourceHtml": "bridal-malay/index.html",
-      "routes": [
-        "bridal-malay/index.html",
-        "bridal-malay/collections.html",
-        "bridal-malay/experience.html",
-        "bridal-malay/appointments.html"
-      ],
-      "detailImage": "assets/img/bridal-malay-detail.jpg",
-      "layoutStyle": "centered calm composition with arched hero image and modest styling cues",
-      "fictionalSampleDetails": true,
-      "navigationLabels": [
+      "market": "Malay bridal studio",
+      "layoutClass": "skin-malay",
+      "designDirection": "Quiet modest atelier: centered arched portrait, expansive whitespace, soft panels, comfort-first three-column notes.",
+      "navLabels": [
         "Home",
-        "Gown Edit",
+        "The Gown Edit",
         "Modest Styling",
-        "Fitting Request"
+        "Request a Fitting"
       ],
-      "conceptScope": "Modest-first styling with sample coverage, hijab coordination and Nikah/celebration paths; no real services are claimed.",
-      "homeSectionOrderVaries": true,
-      "pageTitles": {
-        "index": "Bridal Boutique Concept",
-        "collections": "Modest Gowns & Styling",
-        "experience": "A Modest Styling Journey",
-        "appointments": "Plan a Gown Fitting"
+      "theme": {
+        "dark": "#283127",
+        "ink": "#252b23",
+        "soft": "#eef1e8",
+        "accent": "#76826a",
+        "paper": "#fbfaf4"
       },
-      "detailImageAlt": "Ivory modest bridal gown and coordinated hijab styling detail"
+      "heroImage": "assets/img/bridal-malay.jpg",
+      "detailImage": "assets/img/bridal-malay-detail.jpg",
+      "fictionalScope": "A comfort-led guide to coverage, fabric, family and styling preferences.",
+      "pageTitles": {
+        "collections": "The Gown Edit",
+        "experience": "A Modest Styling Journey",
+        "appointments": "Request a Fitting"
+      },
+      "routes": [
+        {
+          "file": "index.html",
+          "title": "Bridal Boutique Concept | SERUNI BRIDAL",
+          "sectionSequence": [
+            {
+              "class": [
+                "hero"
+              ],
+              "firstText": "Malay bridal studio",
+              "heading": "A quieter kind of bridal."
+            },
+            {
+              "class": [
+                "soft-panel"
+              ],
+              "firstText": "A modest-first concept",
+              "heading": "Comfort is part of the design."
+            },
+            {
+              "class": [],
+              "firstText": "Consider your preferences",
+              "heading": "A style conversation, at your pace."
+            },
+            {
+              "class": [],
+              "firstText": "The gown edit",
+              "heading": "Quiet detail, thoughtful shape."
+            },
+            {
+              "class": [
+                "booking"
+              ],
+              "firstText": "Sample enquiry",
+              "heading": "Start with a conversation."
+            }
+          ]
+        },
+        {
+          "file": "collections.html",
+          "title": "The Gown Edit | SERUNI BRIDAL",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Malay bridal studio",
+              "heading": "The Gown Edit"
+            },
+            {
+              "class": [
+                "soft-panel"
+              ],
+              "firstText": "The gown edit",
+              "heading": "A quieter way to compare."
+            },
+            {
+              "class": [],
+              "firstText": "Keep these notes",
+              "heading": "Coverage. Movement. Ease."
+            },
+            {
+              "class": [],
+              "firstText": "Continue planning",
+              "heading": "Want to ask about a detail?"
+            }
+          ]
+        },
+        {
+          "file": "experience.html",
+          "title": "A Modest Styling Journey | SERUNI BRIDAL",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Malay bridal studio",
+              "heading": "A Modest Styling Journey"
+            },
+            {
+              "class": [
+                "soft-panel"
+              ],
+              "firstText": "Before you visit",
+              "heading": "Your comfort comes first."
+            },
+            {
+              "class": [],
+              "firstText": "A few helpful answers",
+              "heading": "A few helpful answers"
+            },
+            {
+              "class": [],
+              "firstText": "Next step",
+              "heading": "Ready to ask a question?"
+            }
+          ]
+        },
+        {
+          "file": "appointments.html",
+          "title": "Request a Fitting | SERUNI BRIDAL",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Malay bridal studio",
+              "heading": "Request a Fitting"
+            },
+            {
+              "class": [
+                "booking"
+              ],
+              "firstText": "Your fitting note",
+              "heading": "Start wherever you are."
+            },
+            {
+              "class": [],
+              "firstText": "Before you send",
+              "heading": "Clear expectations."
+            }
+          ]
+        }
+      ],
+      "pageArchetypes": {
+        "home": [
+          "centered typography hero",
+          "large arched portrait photograph",
+          "sage soft-panel introduction",
+          "three-column comfort / coverage / styling prompts",
+          "gown cards",
+          "fitting enquiry form"
+        ],
+        "collections": [
+          "centered arch subhero",
+          "quiet gown-card catalogue",
+          "comfort / movement / ease note panel",
+          "enquiry CTA"
+        ],
+        "experience": [
+          "centered arch subhero",
+          "comfort-first preference checklist",
+          "FAQ accordion",
+          "enquiry CTA"
+        ],
+        "appointments": [
+          "centered arch subhero",
+          "detail image and sample facts beside the form",
+          "modesty-specific select options",
+          "expectations note"
+        ]
+      }
     },
     {
       "slug": "bridal-indian",
       "brand": "AAROH BRIDAL HOUSE",
-      "market": "Indian Malaysian bridal",
-      "image": "assets/img/bridal-indian.jpg",
-      "accent": "#9b423b",
-      "soft": "#f7eee7",
-      "dark": "#281c1a",
-      "sourceHtml": "bridal-indian/index.html",
-      "routes": [
-        "bridal-indian/index.html",
-        "bridal-indian/collections.html",
-        "bridal-indian/experience.html",
-        "bridal-indian/appointments.html"
-      ],
-      "detailImage": "assets/img/bridal-indian-detail.jpg",
-      "layoutStyle": "asymmetric image-first hero with ruby-and-gold editorial palette",
-      "fictionalSampleDetails": true,
-      "navigationLabels": [
+      "market": "Indian Malaysian bridal boutique",
+      "layoutClass": "skin-indian",
+      "designDirection": "Celebration editorial: left-hand portrait/right-hand copy, ruby event triad, textile feature and event-sequenced collections.",
+      "navLabels": [
         "Home",
-        "Outfit Edit",
-        "Celebration Guide",
-        "Styling Consultation"
+        "The Outfit Edit",
+        "Celebration Notes",
+        "Styling Enquiry"
       ],
-      "conceptScope": "Multi-event outfit planning across welcome, ceremony and reception, with drape and textile detail.",
-      "homeSectionOrderVaries": true,
-      "pageTitles": {
-        "index": "Bridal Boutique Concept",
-        "collections": "Looks Across the Celebrations",
-        "experience": "Ceremony-to-Reception Styling",
-        "appointments": "Plan a Styling Consultation"
+      "theme": {
+        "dark": "#451922",
+        "ink": "#30191a",
+        "soft": "#f5ede4",
+        "accent": "#aa6040",
+        "paper": "#fffaf3"
       },
-      "detailImageAlt": "Ruby fabric with antique-gold embroidery for an Indian Malaysian bridal concept"
+      "heroImage": "assets/img/bridal-indian.jpg",
+      "detailImage": "assets/img/bridal-indian-detail.jpg",
+      "fictionalScope": "A multi-event planning guide for outfit changes, drape and comfort.",
+      "pageTitles": {
+        "collections": "Looks Across the Celebrations",
+        "experience": "The Celebration Map",
+        "appointments": "Styling Consultation"
+      },
+      "routes": [
+        {
+          "file": "index.html",
+          "title": "Bridal Boutique Concept | AAROH BRIDAL HOUSE",
+          "sectionSequence": [
+            {
+              "class": [
+                "hero"
+              ],
+              "firstText": "Indian Malaysian bridal boutique",
+              "heading": "A celebration, woven in colour."
+            },
+            {
+              "class": [],
+              "firstText": "01 / WELCOME",
+              "heading": ""
+            },
+            {
+              "class": [],
+              "firstText": "Textile & movement",
+              "heading": "Aaroh is a fictional bridal house shaped around event-led outfit planning."
+            },
+            {
+              "class": [],
+              "firstText": "Illustrative prices",
+              "heading": "Looks across the celebrations."
+            },
+            {
+              "class": [
+                "booking"
+              ],
+              "firstText": "Sample enquiry",
+              "heading": "Start with a conversation."
+            }
+          ]
+        },
+        {
+          "file": "collections.html",
+          "title": "Looks Across the Celebrations | AAROH BRIDAL HOUSE",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Indian Malaysian bridal boutique",
+              "heading": "Looks Across the Celebrations"
+            },
+            {
+              "class": [],
+              "firstText": "WELCOME",
+              "heading": ""
+            },
+            {
+              "class": [],
+              "firstText": "Outfit edit",
+              "heading": "Looks Across the Celebrations"
+            },
+            {
+              "class": [],
+              "firstText": "Continue planning",
+              "heading": "Want to ask about a detail?"
+            }
+          ]
+        },
+        {
+          "file": "experience.html",
+          "title": "The Celebration Map | AAROH BRIDAL HOUSE",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Indian Malaysian bridal boutique",
+              "heading": "The Celebration Map"
+            },
+            {
+              "class": [],
+              "firstText": "The celebration map",
+              "heading": "One day, many expressions."
+            },
+            {
+              "class": [],
+              "firstText": "Styling questions",
+              "heading": "Styling questions"
+            },
+            {
+              "class": [],
+              "firstText": "Next step",
+              "heading": "Ready to ask a question?"
+            }
+          ]
+        },
+        {
+          "file": "appointments.html",
+          "title": "Styling Consultation | AAROH BRIDAL HOUSE",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Indian Malaysian bridal boutique",
+              "heading": "Styling Consultation"
+            },
+            {
+              "class": [
+                "booking"
+              ],
+              "firstText": "Event / outfit / detail",
+              "heading": "Tell us what the celebration calls for."
+            },
+            {
+              "class": [],
+              "firstText": "Before you send",
+              "heading": "Clear expectations."
+            }
+          ]
+        }
+      ],
+      "pageArchetypes": {
+        "home": [
+          "image-first asymmetric ruby hero",
+          "three-column welcome / ceremony / reception event triad",
+          "textile image-and-story split",
+          "fictional-price collection cards",
+          "event-specific enquiry form"
+        ],
+        "collections": [
+          "image-led subhero",
+          "three event tiles",
+          "outfit-edit cards in a split composition",
+          "fictional-price disclosure",
+          "enquiry CTA"
+        ],
+        "experience": [
+          "image-led subhero",
+          "three-stage celebration map",
+          "FAQ accordion",
+          "enquiry CTA"
+        ],
+        "appointments": [
+          "image-led subhero",
+          "detail photograph and event form in a two-column layout",
+          "sample facts",
+          "expectations note"
+        ]
+      }
     },
     {
       "slug": "bridal-general",
       "brand": "EVER AFTER BRIDAL",
-      "market": "General Malaysian bridal boutique",
-      "image": "assets/img/bridal-general.jpg",
-      "accent": "#9a7a62",
-      "soft": "#f4eee7",
-      "dark": "#28211c",
-      "sourceHtml": "bridal-general/index.html",
-      "routes": [
-        "bridal-general/index.html",
-        "bridal-general/collections.html",
-        "bridal-general/experience.html",
-        "bridal-general/appointments.html"
+      "market": "Inclusive Malaysian bridal boutique",
+      "layoutClass": "skin-general",
+      "designDirection": "Inclusive style-finder: asymmetrical bento hero with inset detail, chooser tiles and guided comparison blocks.",
+      "navLabels": [
+        "Start Here",
+        "Style Finder",
+        "Fitting Guide",
+        "Make a Plan"
       ],
-      "detailImage": "assets/img/bridal-general-detail.jpg",
-      "layoutStyle": "inclusive modular layout with overlapping editorial blocks",
-      "fictionalSampleDetails": true,
-      "navigationLabels": [
-        "Home",
-        "Find Your Style",
-        "How It Works",
-        "Book a Fitting"
-      ],
-      "conceptScope": "Inclusive silhouette discovery, fit/comfort conversations and wardrobe planning without assumed size or style.",
-      "homeSectionOrderVaries": true,
-      "pageTitles": {
-        "index": "Bridal Boutique Concept",
-        "collections": "Find Your Bridal Silhouette",
-        "experience": "A Fitting That Starts With You",
-        "appointments": "Explore Your Fitting"
+      "theme": {
+        "dark": "#342c28",
+        "ink": "#302924",
+        "soft": "#f2ece5",
+        "accent": "#a47d67",
+        "paper": "#fbf8f3"
       },
-      "detailImageAlt": "A varied rail of bridal silhouettes in an inclusive boutique concept"
+      "heroImage": "assets/img/bridal-general.jpg",
+      "detailImage": "assets/img/bridal-general-detail.jpg",
+      "fictionalScope": "An exploratory fitting guide for shoppers still deciding what they like.",
+      "pageTitles": {
+        "collections": "Find Your Silhouette",
+        "experience": "Your Fitting Guide",
+        "appointments": "Make a Plan"
+      },
+      "routes": [
+        {
+          "file": "index.html",
+          "title": "Bridal Boutique Concept | EVER AFTER BRIDAL",
+          "sectionSequence": [
+            {
+              "class": [
+                "wrap",
+                "hero"
+              ],
+              "firstText": "Inclusive Malaysian bridal boutique",
+              "heading": "There is no one way to be a bride."
+            },
+            {
+              "class": [],
+              "firstText": "A starting point",
+              "heading": "Explore what feels like you."
+            },
+            {
+              "class": [],
+              "firstText": "Sample style guide",
+              "heading": "Compare the details."
+            },
+            {
+              "class": [
+                "booking"
+              ],
+              "firstText": "Sample enquiry",
+              "heading": "Start with a conversation."
+            }
+          ]
+        },
+        {
+          "file": "collections.html",
+          "title": "Find Your Silhouette | EVER AFTER BRIDAL",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Inclusive Malaysian bridal boutique",
+              "heading": "Find Your Silhouette"
+            },
+            {
+              "class": [],
+              "firstText": "Style finder",
+              "heading": "Start with the feeling, not a label."
+            },
+            {
+              "class": [],
+              "firstText": "Example price guide",
+              "heading": "Compare without pressure."
+            },
+            {
+              "class": [],
+              "firstText": "Continue planning",
+              "heading": "Want to ask about a detail?"
+            }
+          ]
+        },
+        {
+          "file": "experience.html",
+          "title": "Your Fitting Guide | EVER AFTER BRIDAL",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Inclusive Malaysian bridal boutique",
+              "heading": "Your Fitting Guide"
+            },
+            {
+              "class": [],
+              "firstText": "Fitting guide",
+              "heading": "Your Fitting Guide"
+            },
+            {
+              "class": [],
+              "firstText": "Before you decide",
+              "heading": "Before you decide"
+            },
+            {
+              "class": [],
+              "firstText": "Next step",
+              "heading": "Ready to ask a question?"
+            }
+          ]
+        },
+        {
+          "file": "appointments.html",
+          "title": "Make a Plan | EVER AFTER BRIDAL",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Inclusive Malaysian bridal boutique",
+              "heading": "Make a Plan"
+            },
+            {
+              "class": [],
+              "firstText": "A no-pressure first step",
+              "heading": "What would help you feel prepared?"
+            },
+            {
+              "class": [],
+              "firstText": "Before you send",
+              "heading": "Clear expectations."
+            }
+          ]
+        }
+      ],
+      "pageArchetypes": {
+        "home": [
+          "asymmetric bento hero with dark text panel",
+          "primary photograph plus inset detail-image quote tile",
+          "four-tile silhouette/style chooser",
+          "comparison cards",
+          "wide planning enquiry form"
+        ],
+        "collections": [
+          "bento-derived subhero",
+          "style finder with four choice tiles",
+          "illustrative price cards",
+          "enquiry CTA"
+        ],
+        "experience": [
+          "bento-derived subhero",
+          "four-step fitting guide tiles",
+          "FAQ accordion",
+          "enquiry CTA"
+        ],
+        "appointments": [
+          "bento-derived subhero",
+          "four preparation tiles beside wide form",
+          "pre-send expectations note"
+        ]
+      }
     },
     {
       "slug": "bridal-kl",
       "brand": "ATELIER KUALA",
       "market": "Kuala Lumpur bridal atelier",
-      "image": "assets/img/bridal-kl.jpg",
-      "accent": "#a88b62",
-      "soft": "#f3efe7",
-      "dark": "#201e1b",
-      "sourceHtml": "bridal-kl/index.html",
-      "routes": [
-        "bridal-kl/index.html",
-        "bridal-kl/collections.html",
-        "bridal-kl/experience.html",
-        "bridal-kl/appointments.html"
-      ],
-      "detailImage": "assets/img/bridal-kl-detail.jpg",
-      "layoutStyle": "oversized city-atelier typography and full-width image composition",
-      "fictionalSampleDetails": true,
-      "navigationLabels": [
-        "The Atelier",
+      "layoutClass": "skin-kl",
+      "designDirection": "City-atelier magazine: oversized typographic dark hero, full-width image, numbered index and editorial lookbook.",
+      "navLabels": [
+        "Atelier",
         "The Edit",
-        "Atelier Process",
-        "Private Appointment"
+        "Process",
+        "Private Enquiry"
       ],
-      "conceptScope": "Curated city-atelier concept focused on editorial selection and a deliberate consultation; no designer relationships or bespoke services are claimed.",
-      "homeSectionOrderVaries": true,
-      "pageTitles": {
-        "index": "Bridal Boutique Concept",
-        "collections": "The Atelier Edit",
-        "experience": "From First Edit to Final Fit",
-        "appointments": "Request a Private Atelier Fitting"
+      "theme": {
+        "dark": "#171717",
+        "ink": "#23211e",
+        "soft": "#eeeae2",
+        "accent": "#a78d65",
+        "paper": "#f8f6f2"
       },
-      "detailImageAlt": "Minimalist ivory couture gown in a contemporary bridal studio"
+      "heroImage": "assets/img/bridal-kl.jpg",
+      "detailImage": "assets/img/bridal-kl-detail.jpg",
+      "fictionalScope": "A concise, appointment-led guide. No designer relationship or bespoke service is claimed.",
+      "pageTitles": {
+        "collections": "The Atelier Edit",
+        "experience": "The Atelier Process",
+        "appointments": "Private Enquiry"
+      },
+      "routes": [
+        {
+          "file": "index.html",
+          "title": "Bridal Boutique Concept | ATELIER KUALA",
+          "sectionSequence": [
+            {
+              "class": [
+                "hero"
+              ],
+              "firstText": "Kuala Lumpur bridal atelier / FICTIONAL CONCEPT",
+              "heading": "Form. Fabric. Feeling."
+            },
+            {
+              "class": [],
+              "firstText": "Atelier point of view",
+              "heading": "A tightly edited concept."
+            },
+            {
+              "class": [],
+              "firstText": "Lookbook / example prices",
+              "heading": "The edited collection."
+            },
+            {
+              "class": [
+                "booking"
+              ],
+              "firstText": "Sample enquiry",
+              "heading": "Start with a conversation."
+            }
+          ]
+        },
+        {
+          "file": "collections.html",
+          "title": "The Atelier Edit | ATELIER KUALA",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Kuala Lumpur bridal atelier",
+              "heading": "The Atelier Edit"
+            },
+            {
+              "class": [],
+              "firstText": "Collection / 001",
+              "heading": "The Atelier Edit"
+            },
+            {
+              "class": [],
+              "firstText": "Fictional lookbook content; no designer affiliation, made-to-measure service, stock or availability is claimed.",
+              "heading": ""
+            },
+            {
+              "class": [],
+              "firstText": "Continue planning",
+              "heading": "Want to ask about a detail?"
+            }
+          ]
+        },
+        {
+          "file": "experience.html",
+          "title": "The Atelier Process | ATELIER KUALA",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Kuala Lumpur bridal atelier",
+              "heading": "The Atelier Process"
+            },
+            {
+              "class": [],
+              "firstText": "Appointment / sequence",
+              "heading": "The Atelier Process"
+            },
+            {
+              "class": [],
+              "firstText": "Atelier notes",
+              "heading": "Atelier notes"
+            },
+            {
+              "class": [],
+              "firstText": "Next step",
+              "heading": "Ready to ask a question?"
+            }
+          ]
+        },
+        {
+          "file": "appointments.html",
+          "title": "Private Enquiry | ATELIER KUALA",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Kuala Lumpur bridal atelier",
+              "heading": "Private Enquiry"
+            },
+            {
+              "class": [
+                "booking"
+              ],
+              "firstText": "Private appointment / enquiry",
+              "heading": "A considered first note."
+            },
+            {
+              "class": [],
+              "firstText": "Before you send",
+              "heading": "Clear expectations."
+            }
+          ]
+        }
+      ],
+      "pageArchetypes": {
+        "home": [
+          "dark oversized typographic masthead",
+          "full-width image beneath the masthead",
+          "numbered editorial index rows",
+          "dark city-atelier collection cards",
+          "minimal private enquiry form"
+        ],
+        "collections": [
+          "dark typographic subhero",
+          "two-column editorial lookbook index with example prices",
+          "wide detail image",
+          "enquiry CTA"
+        ],
+        "experience": [
+          "dark typographic subhero",
+          "numbered three-step appointment index",
+          "FAQ accordion",
+          "enquiry CTA"
+        ],
+        "appointments": [
+          "dark typographic subhero",
+          "minimal private enquiry copy and form",
+          "sample facts",
+          "expectations note"
+        ]
+      }
     },
     {
       "slug": "bridal-johor",
       "brand": "RONA BRIDAL STUDIO",
       "market": "Johor bridal studio",
-      "image": "assets/img/bridal-johor.jpg",
-      "accent": "#71816d",
-      "soft": "#eef1e9",
-      "dark": "#222820",
-      "sourceHtml": "bridal-johor/index.html",
-      "routes": [
-        "bridal-johor/index.html",
-        "bridal-johor/collections.html",
-        "bridal-johor/experience.html",
-        "bridal-johor/appointments.html"
-      ],
-      "detailImage": "assets/img/bridal-johor-detail.jpg",
-      "layoutStyle": "welcoming layout with rounded arch imagery and practical journey cues",
-      "fictionalSampleDetails": true,
-      "navigationLabels": [
-        "Home",
-        "Wedding Looks",
-        "Package Concept",
+      "layoutClass": "skin-johor",
+      "designDirection": "Practical one-stop concept: tilted visit card, structured package-board rows and step-based visit planning.",
+      "navLabels": [
+        "Welcome",
+        "Wardrobe",
+        "Package Idea",
         "Plan a Visit"
       ],
-      "conceptScope": "Illustrative one-stop wedding package structure spanning bridal wardrobe, partner styling and optional event support; no package/service is real.",
-      "homeSectionOrderVaries": true,
+      "theme": {
+        "dark": "#263026",
+        "ink": "#282b25",
+        "soft": "#eff1e9",
+        "accent": "#809071",
+        "paper": "#fbfaf4"
+      },
+      "heroImage": "assets/img/bridal-johor.jpg",
+      "detailImage": "assets/img/bridal-johor-detail.jpg",
+      "fictionalScope": "A practical shared-planning flow for confirming an actual shop’s services and visit terms.",
       "pageTitles": {
-        "index": "Bridal Boutique Concept",
-        "collections": "Wedding Wardrobe Options",
-        "experience": "Planning the Day Together",
+        "collections": "Wardrobe & Package Board",
+        "experience": "Planning Together",
         "appointments": "Plan a Studio Visit"
       },
-      "detailImageAlt": "A bridal fitting room and garment rail in a regional boutique concept"
+      "routes": [
+        {
+          "file": "index.html",
+          "title": "Bridal Boutique Concept | RONA BRIDAL STUDIO",
+          "sectionSequence": [
+            {
+              "class": [
+                "wrap",
+                "hero"
+              ],
+              "firstText": "Johor bridal studio",
+              "heading": "One day. Your kind of plan."
+            },
+            {
+              "class": [
+                "package-board"
+              ],
+              "firstText": "Package board · concept only",
+              "heading": "See the parts before you decide."
+            },
+            {
+              "class": [],
+              "firstText": "Simple visit plan",
+              "heading": "Three steps, no guesswork."
+            },
+            {
+              "class": [
+                "booking"
+              ],
+              "firstText": "Sample enquiry",
+              "heading": "Start with a conversation."
+            }
+          ]
+        },
+        {
+          "file": "collections.html",
+          "title": "Wardrobe & Package Board | RONA BRIDAL STUDIO",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Johor bridal studio",
+              "heading": "Wardrobe & Package Board"
+            },
+            {
+              "class": [
+                "package-board"
+              ],
+              "firstText": "Wardrobe board / concept only",
+              "heading": "Wardrobe & Package Board"
+            },
+            {
+              "class": [],
+              "firstText": "Continue planning",
+              "heading": "Want to ask about a detail?"
+            }
+          ]
+        },
+        {
+          "file": "experience.html",
+          "title": "Planning Together | RONA BRIDAL STUDIO",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Johor bridal studio",
+              "heading": "Planning Together"
+            },
+            {
+              "class": [],
+              "firstText": "Planning together",
+              "heading": "A visit plan for two."
+            },
+            {
+              "class": [
+                "package-board"
+              ],
+              "firstText": "Planning questions",
+              "heading": "Planning questions"
+            },
+            {
+              "class": [],
+              "firstText": "Next step",
+              "heading": "Ready to ask a question?"
+            }
+          ]
+        },
+        {
+          "file": "appointments.html",
+          "title": "Plan a Studio Visit | RONA BRIDAL STUDIO",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Johor bridal studio",
+              "heading": "Plan a Studio Visit"
+            },
+            {
+              "class": [
+                "booking"
+              ],
+              "firstText": "Plan your studio visit",
+              "heading": "Ask about the parts of your day."
+            },
+            {
+              "class": [],
+              "firstText": "Before you send",
+              "heading": "Clear expectations."
+            }
+          ]
+        }
+      ],
+      "pageArchetypes": {
+        "home": [
+          "two-column welcoming hero",
+          "tilted image-and-visit-information card with offset shadow",
+          "structured wardrobe/package board rows",
+          "three rounded visit-planning cards",
+          "visit enquiry form"
+        ],
+        "collections": [
+          "two-column visit-card subhero",
+          "structured sample wardrobe/package price rows",
+          "enquiry CTA"
+        ],
+        "experience": [
+          "two-column visit-card subhero",
+          "three-step shared planning cards",
+          "FAQ accordion in soft package panel",
+          "enquiry CTA"
+        ],
+        "appointments": [
+          "two-column visit-card subhero",
+          "sample visit-information card beside form",
+          "package-specific select options",
+          "expectations note"
+        ]
+      }
     },
     {
       "slug": "bridal-penang",
       "brand": "JUNIPER & LACE",
       "market": "Penang bridal boutique",
-      "image": "assets/img/bridal-penang.jpg",
-      "accent": "#567b78",
-      "soft": "#edf2ef",
-      "dark": "#1e2928",
-      "sourceHtml": "bridal-penang/index.html",
-      "routes": [
-        "bridal-penang/index.html",
-        "bridal-penang/collections.html",
-        "bridal-penang/experience.html",
-        "bridal-penang/appointments.html"
+      "layoutClass": "skin-penang",
+      "designDirection": "Heritage-inspired archive editorial: framed print-like hero, craft-note spread and detailed material grid.",
+      "navLabels": [
+        "The House",
+        "Collection",
+        "Notes on Craft",
+        "Visit"
       ],
-      "detailImage": "assets/img/bridal-penang-detail.jpg",
-      "layoutStyle": "framed editorial imagery and heritage-inspired, contemporary composition",
-      "fictionalSampleDetails": true,
-      "navigationLabels": [
-        "The Studio",
-        "Studio Edit",
-        "Craft & Care",
-        "Visit Planning"
-      ],
-      "conceptScope": "Detail-led contemporary styling with fabric, finishing and a heritage-inspired mood, without location or artisan claims.",
-      "homeSectionOrderVaries": true,
-      "pageTitles": {
-        "index": "Bridal Boutique Concept",
-        "collections": "Craft, Texture & Ceremony",
-        "experience": "A Studio Visit With Context",
-        "appointments": "Plan a Studio Consultation"
+      "theme": {
+        "dark": "#263b38",
+        "ink": "#28312f",
+        "soft": "#e9e4d8",
+        "accent": "#b5755b",
+        "paper": "#f8f5ee"
       },
-      "detailImageAlt": "Close-up textile detail for a fictional Penang bridal concept"
+      "heroImage": "assets/img/bridal-penang.jpg",
+      "detailImage": "assets/img/bridal-penang-detail.jpg",
+      "fictionalScope": "A detail-led studio guide with no claim about provenance, address or artisan partnership.",
+      "pageTitles": {
+        "collections": "The Studio Collection",
+        "experience": "Notes on Craft & Care",
+        "appointments": "Visit the Studio"
+      },
+      "routes": [
+        {
+          "file": "index.html",
+          "title": "Bridal Boutique Concept | JUNIPER & LACE",
+          "sectionSequence": [
+            {
+              "class": [
+                "wrap",
+                "hero"
+              ],
+              "firstText": "Penang bridal boutique",
+              "heading": "A little texture. A lot of meaning."
+            },
+            {
+              "class": [
+                "package-board"
+              ],
+              "firstText": "Package board · concept only",
+              "heading": "See the parts before you decide."
+            },
+            {
+              "class": [],
+              "firstText": "Simple visit plan",
+              "heading": "Three steps, no guesswork."
+            },
+            {
+              "class": [
+                "booking"
+              ],
+              "firstText": "Sample enquiry",
+              "heading": "Start with a conversation."
+            }
+          ]
+        },
+        {
+          "file": "collections.html",
+          "title": "The Studio Collection | JUNIPER & LACE",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Penang bridal boutique",
+              "heading": "The Studio Collection"
+            },
+            {
+              "class": [],
+              "firstText": "Three directions",
+              "heading": "The Studio Collection"
+            },
+            {
+              "class": [],
+              "firstText": "01 / EDIT",
+              "heading": ""
+            },
+            {
+              "class": [],
+              "firstText": "Continue planning",
+              "heading": "Want to ask about a detail?"
+            }
+          ]
+        },
+        {
+          "file": "experience.html",
+          "title": "Notes on Craft & Care | JUNIPER & LACE",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Penang bridal boutique",
+              "heading": "Notes on Craft & Care"
+            },
+            {
+              "class": [],
+              "firstText": "Notice the details.",
+              "heading": "Notes on Craft & Care"
+            },
+            {
+              "class": [],
+              "firstText": "01 / LOOK",
+              "heading": ""
+            },
+            {
+              "class": [],
+              "firstText": "Studio questions",
+              "heading": "Studio questions"
+            },
+            {
+              "class": [],
+              "firstText": "Next step",
+              "heading": "Ready to ask a question?"
+            }
+          ]
+        },
+        {
+          "file": "appointments.html",
+          "title": "Visit the Studio | JUNIPER & LACE",
+          "sectionSequence": [
+            {
+              "class": [
+                "subhero"
+              ],
+              "firstText": "Penang bridal boutique",
+              "heading": "Visit the Studio"
+            },
+            {
+              "class": [
+                "booking"
+              ],
+              "firstText": "Studio correspondence",
+              "heading": "Share a detail worth remembering."
+            },
+            {
+              "class": [],
+              "firstText": "Before you send",
+              "heading": "Clear expectations."
+            }
+          ]
+        }
+      ],
+      "pageArchetypes": {
+        "home": [
+          "stone-toned archival frame with bordered portrait and inset margin",
+          "asymmetric editorial headline/copy panel",
+          "craft-note quote spread",
+          "three-column material / form / setting detail grid",
+          "framed detail image",
+          "studio enquiry form"
+        ],
+        "collections": [
+          "framed archival subhero",
+          "craft-note text spread",
+          "three-column editorial collection cards",
+          "framed close-up image",
+          "enquiry CTA"
+        ],
+        "experience": [
+          "framed archival subhero",
+          "craft and care note spread",
+          "three-column look/detail/place grid",
+          "FAQ accordion",
+          "enquiry CTA"
+        ],
+        "appointments": [
+          "framed archival subhero",
+          "studio correspondence copy and form",
+          "sample facts",
+          "expectations note"
+        ]
+      }
     }
-  ],
-  "designSpecPath": "wix/design-spec.json"
+  ]
 }

@@ -25,7 +25,7 @@ If you run a canteen, catering or food-service business and would like to discus
 - Each concept has a dedicated detail image in `assets/img/bridal-*-detail.jpg`; the primary hero images remain in `assets/img/`.
 - The hub has structured data identifying the portfolio and publisher.
 - Concept and prospect pages are `noindex, follow`: direct-link viewing is possible, but they are not intended to appear in search results. The sitemap lists only the public hub.
-- Bridal pages use Wix-recreatable section layouts. `WIX-IMPLEMENTATION.md`, `wix/site-manifest.json` and `wix/design-spec.json` provide a manual Wix Studio handoff for 1:1 visual reconstruction; they are not a Wix-native import or one-click deploy.
+- Each bridal concept uses a different layout and page architecture. `WIX-IMPLEMENTATION.md`, `wix/site-manifest.json` and `wix/design-spec.json` provide a route-by-route manual Wix Studio handoff for 1:1 visual reconstruction. This is not an import file or one-click deploy; no Wix build has been represented as already generated or verified.
 - The language switcher uses automatic browser-side translation; translation quality may vary.
 
 ### Pages
