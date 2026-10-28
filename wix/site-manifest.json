@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "purpose": "source manifest for a future Wix-connected importer",
+  "nativeWixImportFile": false,
+  "note": "Wix does not natively import this manifest or arbitrary HTML as an editable site. A Wix app/automation must map these records to native pages after customer authorization.",
+  "languageTargets": [
+    "en",
+    "ms",
+    "zh-CN"
+  ],
+  "globalRules": {
+    "responsive": true,
+    "mobileBreakpointPx": 760,
+    "ctaTarget": "#borang",
+    "formFields": [
+      "name",
+      "email",
+      "date (optional)",
+      "message (optional)"
+    ],
+    "publicContact": "hello@jobshore.dpdns.org",
+    "noPhoneOrWhatsApp": true,
+    "footerDisclosure": "Self-initiated concept design, not paid client work.",
+    "robots": "noindex, follow",
+    "sectionOrder": [
+      "hero",
+      "story",
+      "details",
+      "journey",
+      "enquiry",
+      "footer"
+    ]
+  },
+  "pages": [
+    {
+      "slug": "bridal-chinese",
+      "brand": "HONG YUE BRIDAL",
+      "market": "Chinese Malaysian bridal",
+      "image": "assets/img/bridal-chinese.jpg",
+      "accent": "#a33b38",
+      "soft": "#f8f0eb",
+      "dark": "#271d1b",
+      "sourceHtml": "bridal-chinese/index.html"
+    },
+    {
+      "slug": "bridal-malay",
+      "brand": "SERUNI BRIDAL",
+      "market": "Malay bridal",
+      "image": "assets/img/bridal-malay.jpg",
+      "accent": "#66705b",
+      "soft": "#f0f1e9",
+      "dark": "#20271f",
+      "sourceHtml": "bridal-malay/index.html"
+    },
+    {
+      "slug": "bridal-indian",
+      "brand": "AAROH BRIDAL HOUSE",
+      "market": "Indian Malaysian bridal",
+      "image": "assets/img/bridal-indian.jpg",
+      "accent": "#9b423b",
+      "soft": "#f7eee7",
+      "dark": "#281c1a",
+      "sourceHtml": "bridal-indian/index.html"
+    },
+    {
+      "slug": "bridal-general",
+      "brand": "EVER AFTER BRIDAL",
+      "market": "General Malaysian bridal boutique",
+      "image": "assets/img/bridal-general.jpg",
+      "accent": "#9a7a62",
+      "soft": "#f4eee7",
+      "dark": "#28211c",
+      "sourceHtml": "bridal-general/index.html"
+    },
+    {
+      "slug": "bridal-kl",
+      "brand": "ATELIER KUALA",
+      "market": "Kuala Lumpur bridal atelier",
+      "image": "assets/img/bridal-kl.jpg",
+      "accent": "#a88b62",
+      "soft": "#f3efe7",
+      "dark": "#201e1b",
+      "sourceHtml": "bridal-kl/index.html"
+    },
+    {
+      "slug": "bridal-johor",
+      "brand": "RONA BRIDAL STUDIO",
+      "market": "Johor bridal studio",
+      "image": "assets/img/bridal-johor.jpg",
+      "accent": "#71816d",
+      "soft": "#eef1e9",
+      "dark": "#222820",
+      "sourceHtml": "bridal-johor/index.html"
+    },
+    {
+      "slug": "bridal-penang",
+      "brand": "JUNIPER & LACE",
+      "market": "Penang bridal boutique",
+      "image": "assets/img/bridal-penang.jpg",
+      "accent": "#567b78",
+      "soft": "#edf2ef",
+      "dark": "#1e2928",
+      "sourceHtml": "bridal-penang/index.html"
+    }
+  ]
+}

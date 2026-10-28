@@ -4,7 +4,7 @@
 
 **Web design for canteens, catering businesses and food-service operations in Malaysia.**
 
-This portfolio presents three self-initiated industry concepts: a construction-site canteen, corporate catering, and a central kitchen / institutional food supply. The static pages are designed to be clear, responsive and easy to browse.
+The portfolio presents 10 self-initiated design concepts: three for food-service businesses and seven for bridal boutiques (Chinese Malaysian, Malay, Indian Malaysian, general, Kuala Lumpur, Johor and Penang directions), plus a prospect-specific canteen mockup. The static pages are responsive and easy to browse.
 
 > **About the concepts:** These are self-initiated concept designs, not paid client work. Business names, certifications, operating figures, prices, quotes and testimonials shown in the concepts are fictional demonstrations. They are not evidence of certification, actual performance or client experience. Please verify any business qualification directly with the relevant authority.
 
@@ -21,7 +21,8 @@ If you run a canteen, catering or food-service business and would like to discus
 - Static HTML, one page file per project; no framework or build step.
 - Shared page images are stored in `assets/img/`; social preview images are in `assets/og/`.
 - The hub has structured data identifying the portfolio and publisher.
-- The four concept pages are `noindex, follow`: they can be viewed by direct link but are not intended to appear in search results.
+- All 11 concept / prospect pages are `noindex, follow`: direct-link viewing is possible, but they are not intended to appear in search results. The sitemap lists only the public hub.
+- Bridal pages have Wix-friendly section layouts. `WIX-IMPLEMENTATION.md` and `wix/site-manifest.json` provide a handoff for a future Wix workflow; they are not a native one-click Wix import.
 - The language switcher uses automatic browser-side translation; translation quality may vary.
 
 ### Pages
@@ -31,6 +32,8 @@ If you run a canteen, catering or food-service business and would like to discus
 - `serirasa-event/index.html` — corporate catering concept
 - `nutrimas-kitchen/index.html` — central kitchen / institutional supply concept
 - `kantin-warisan-mockup/index.html` — prospect mockup; do not distribute without authorization
+- `bridal-chinese/`, `bridal-malay/`, `bridal-indian/` — bridal concepts by Malaysian cultural market
+- `bridal-general/`, `bridal-kl/`, `bridal-johor/`, `bridal-penang/` — general and regional bridal concepts
 
 ---
 
@@ -38,7 +41,7 @@ If you run a canteen, catering or food-service business and would like to discus
 
 **Reka bentuk laman web untuk kantin, perniagaan katering dan operasi perkhidmatan makanan di Malaysia.**
 
-Portfolio ini memaparkan tiga konsep industri yang dimulakan sendiri: kantin tapak bina, katering korporat, dan dapur pusat / bekalan makanan institusi. Halaman statik ini direka supaya jelas, responsif dan mudah dilayari.
+Portfolio ini memaparkan 10 konsep reka bentuk yang dimulakan sendiri: tiga untuk perniagaan makanan dan tujuh untuk butik pengantin (arah Cina Malaysia, Melayu, India Malaysia, umum, Kuala Lumpur, Johor dan Pulau Pinang), serta satu mockup kantin khusus untuk prospek. Halaman statik ini responsif dan mudah dilayari.
 
 > **Tentang konsep ini:** Semua ini ialah konsep reka bentuk yang dimulakan sendiri, bukan kerja berbayar untuk klien. Nama perniagaan, sijil, angka operasi, harga, petikan dan testimoni yang dipaparkan ialah rekaan untuk demonstrasi. Semua itu bukan bukti pensijilan, prestasi sebenar atau pengalaman pelanggan. Sila sahkan kelayakan perniagaan secara terus dengan pihak berkuasa berkaitan.
 
@@ -55,7 +58,8 @@ Jika anda mengendalikan kantin, katering atau perniagaan perkhidmatan makanan da
 - HTML statik, satu fail halaman bagi setiap projek; tiada framework atau langkah build.
 - Imej halaman dikongsi dalam `assets/img/`; imej pratonton sosial berada dalam `assets/og/`.
 - Halaman utama mempunyai data berstruktur yang mengenal pasti portfolio dan penerbit.
-- Empat halaman konsep ditetapkan `noindex, follow`: boleh dilihat melalui pautan terus, tetapi tidak dimaksudkan untuk muncul dalam hasil carian.
+- Kesemua 11 halaman konsep / prospek ditetapkan `noindex, follow`: boleh dilihat melalui pautan terus, tetapi tidak dimaksudkan untuk muncul dalam hasil carian. Sitemap hanya menyenaraikan halaman utama.
+- Halaman butik pengantin menggunakan susun atur seksyen yang mesra untuk dibina semula di Wix. `WIX-IMPLEMENTATION.md` dan `wix/site-manifest.json` ialah bahan serahan untuk aliran kerja Wix pada masa depan, bukan fail import Wix asli sekali klik.
 - Pemilih bahasa menggunakan terjemahan automatik dalam pelayar; mutu terjemahan mungkin berbeza.
 
 ### Halaman
@@ -65,6 +69,8 @@ Jika anda mengendalikan kantin, katering atau perniagaan perkhidmatan makanan da
 - `serirasa-event/index.html` — konsep katering korporat
 - `nutrimas-kitchen/index.html` — konsep dapur pusat / bekalan institusi
 - `kantin-warisan-mockup/index.html` — mockup prospek; jangan edarkan tanpa kebenaran
+- `bridal-chinese/`, `bridal-malay/`, `bridal-indian/` — konsep butik pengantin mengikut pasaran budaya Malaysia
+- `bridal-general/`, `bridal-kl/`, `bridal-johor/`, `bridal-penang/` — konsep butik pengantin umum dan mengikut lokasi
 
 ---
 
@@ -72,7 +78,7 @@ Jika anda mengendalikan kantin, katering atau perniagaan perkhidmatan makanan da
 
 **为马来西亚食堂、餐饮企业及食品服务运营提供网站设计。**
 
-本作品集展示三个自主发起的行业概念：建筑工地食堂、企业餐饮，以及中央厨房／机构供餐。页面采用静态 HTML，注重清晰、响应式布局和易于浏览。
+本作品集展示 10 个自主发起的设计概念：三个食品服务行业概念，以及七个新娘礼服店概念（马来西亚华人、马来、马来西亚印度、通用、吉隆坡、柔佛和槟城方向），另有一个面向潜在客户的食堂样稿。静态页面均采用响应式布局。
 
 > **关于这些概念：** 这些均为自主发起的概念设计，并非付费客户项目。页面中展示的企业名称、认证、运营数据、价格、引言和评价均为虚构示例，不代表实际认证、经营表现或客户经验。请向相关主管机构直接核实企业资质。
 
@@ -89,7 +95,8 @@ Jobshore (M) Sdn Bhd 设计网站，帮助企业清楚介绍服务、解答潜�
 - 纯静态 HTML，每个项目各自使用页面文件；无需框架或构建步骤。
 - 页面共用图片存放于 `assets/img/`；社交媒体预览图存放于 `assets/og/`。
 - 作品集主页包含用于标识作品集及发布方的结构化数据。
-- 四个概念页面均设为 `noindex, follow`：可通过直接链接访问，但不会被设置为出现在搜索结果中。
+- 全部 11 个概念／潜在客户页面均设为 `noindex, follow`：可通过直接链接访问，但不面向搜索结果；站点地图只列出作品集主页。
+- 新娘礼服页面采用适合在 Wix 中重建的分区布局。`WIX-IMPLEMENTATION.md` 和 `wix/site-manifest.json` 为未来 Wix 工作流程提供交接资料，但不是 Wix 原生的一键导入文件。
 - 语言切换使用浏览器端自动翻译，翻译质量可能有所不同。
 
 ### 页面
@@ -99,3 +106,5 @@ Jobshore (M) Sdn Bhd 设计网站，帮助企业清楚介绍服务、解答潜�
 - `serirasa-event/index.html` — 企业餐饮概念
 - `nutrimas-kitchen/index.html` — 中央厨房／机构供餐概念
 - `kantin-warisan-mockup/index.html` — 潜在客户专属样稿；未经许可请勿传播
+- `bridal-chinese/`、`bridal-malay/`、`bridal-indian/` — 按马来西亚文化市场划分的新娘礼服店概念
+- `bridal-general/`、`bridal-kl/`、`bridal-johor/`、`bridal-penang/` — 通用及地区型新娘礼服店概念

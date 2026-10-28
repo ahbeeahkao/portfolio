@@ -212,13 +212,6 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
   display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;
   font-size:11.5px;color:rgba(255,255,255,.45)}
 
-/* ---------- sticky whatsapp ---------- */
-.wa-float{position:fixed;right:20px;bottom:20px;z-index:90;display:inline-flex;align-items:center;gap:10px;
-  background:#12a05c;color:#fff;padding:13px 19px;border-radius:999px;font-weight:700;font-size:13.5px;
-  box-shadow:0 12px 30px -10px rgba(0,0,0,.45);transition:transform .2s}
-.wa-float:hover{transform:translateY(-2px) scale(1.02)}
-.wa-float svg{width:18px;height:18px}
-
 /* ---------- misc ---------- */
 .concept{display:inline-block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
   font-weight:800;padding:4px 9px;border:1px solid var(--line);color:var(--muted);border-radius:2px}
@@ -253,8 +246,6 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
   .stat{border-right:0;border-bottom:1px solid var(--line)}
   .hero-facts{gap:22px}
   .f-grid{grid-template-columns:1fr}
-  .wa-float span{display:none}
-  .wa-float{padding:15px;border-radius:50%}
 }
 </style>
 <style>
@@ -342,7 +333,6 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
     "@type": "Organization",
     "name": "Jobshore (M) Sdn Bhd",
     "legalName": "Jobshore (M) Sdn Bhd",
-    "identifier": "1525686-X",
     "url": "https://jobshore.dpdns.org/",
     "email": "hello@jobshore.dpdns.org",
     "areaServed": {
@@ -398,7 +388,7 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
       <a href="#borang">Hubungi</a>
     </div>
     <div class="nav-cta">
-      <a class="btn btn-primary btn-sm" data-wa="Salam, saya ingin bertanya tentang perkhidmatan kantin kontrak.">Minta Sebut Harga</a>
+      <a class="btn btn-primary btn-sm" href="#borang">Minta Sebut Harga</a>
     </div>
   </div>
 </nav>
@@ -409,9 +399,9 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
       <span class="kicker">Sejak 2016 · Tapak pembinaan, kilang &amp; fasiliti</span>
       <h1>Kantin yang pekerja datang awal. Bukan kerana lapar.</h1>
       <p class="lead">Kami mengendalikan kantin harian dan bekalan makan syif untuk tapak pembinaan
-        dan kilang di Lembah Klang — dengan sijil, laporan dan satu pengurus yang boleh anda telefon.</p>
+        dan kilang di Lembah Klang — dengan sijil, laporan dan satu pengurus sebagai titik rujukan anda.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" data-wa="Salam, saya ingin minta sebut harga kantin. Nama syarikat / tapak: ">Minta Sebut Harga
+        <a class="btn btn-primary" href="#borang">Minta Sebut Harga
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <a class="btn btn-ghost" href="#kadar">Lihat Kadar</a>
       </div>
@@ -570,8 +560,7 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
       <div>
         <span class="eyebrow h-eyebrow">Hubungi</span>
         <h2 class="mt1">Ceritakan tapak anda.</h2>
-        <p class="lead mt1">Isi butiran ringkas. Maklumat akan dihantar terus ke WhatsApp kami,
-          dan kami akan hubungi anda dalam satu hari bekerja.</p>
+        <p class="lead mt1">Isi butiran ringkas. Aplikasi emel anda akan dibuka supaya anda boleh menghantar pertanyaan ke hello@jobshore.dpdns.org.</p>
         <div class="faq mt3">
           <details open style="border-bottom:1px solid var(--line);padding:18px 0">
             <summary style="cursor:pointer;font-weight:700;font-size:15px">Bila boleh mula?</summary>
@@ -590,7 +579,7 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
       <form class="form" id="qf">
         <div class="form-grid">
           <div class="field full"><label>Nama &amp; syarikat</label><input name="nama" placeholder="cth. Ahmad / ABC Construction Sdn Bhd" required></div>
-          <div class="field"><label>No. telefon</label><input name="tel" placeholder="cth. 012-345 6789" required></div>
+          <div class="field"><label>Emel</label><input name="email" type="email" required></div>
           <div class="field"><label>Lokasi tapak</label><input name="lokasi" placeholder="cth. Shah Alam"></div>
           <div class="field"><label>Bilangan pekerja</label>
             <select name="pax"><option>Kurang 150</option><option>150 – 300</option><option>300 – 600</option><option>Lebih 600</option></select>
@@ -600,9 +589,9 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
           </div>
           <div class="field full"><label>Nota tambahan</label><textarea name="nota" placeholder="Syif malam, menu pekerja asing, tarikh mula."></textarea></div>
         </div>
-        <button class="btn btn-primary" type="submit">Hantar melalui WhatsApp
+        <button class="btn btn-primary" type="submit">Hantar pertanyaan melalui emel
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-        <p class="form-note">Terus ke WhatsApp. Tiada pendaftaran.</p>
+        <p class="form-note">Aplikasi emel anda akan dibuka untuk menghantar pertanyaan.</p>
       </form>
     </div>
   </div>
@@ -611,7 +600,7 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
 <div class="cta">
   <div class="wrap">
     <div><h2>Nak nampak menu penuh?</h2><p>Kami hantar kitaran menu 14 hari dan sebut harga sekali.</p></div>
-    <a class="btn btn-ghost" data-wa="Salam, boleh hantar menu 14 hari dan sebut harga kantin?">Minta Menu Penuh</a>
+    <a class="btn btn-ghost" href="#borang">Minta Menu Penuh</a>
   </div>
 </div>
 
@@ -629,86 +618,38 @@ footer p{color:rgba(255,255,255,.6);font-size:13px}
     <div class="f-bottom">
       <span>© 2026 Kantin Warisan</span>
       <span style="color:rgba(255,255,255,.5)">Reka bentuk oleh Jobshore (M) Sdn Bhd</span>
-      <span>Mockup reka bentuk — nama, sijil, angka dan testimoni adalah contoh untuk tujuan pembentangan.</span>
+      <span>Mockup reka bentuk dimulakan sendiri, bukan kerja berbayar; nama, sijil, angka dan testimoni ialah contoh rekaan untuk pembentangan.</span>
     </div>
   </div>
 </footer>
 
-<a class="wa-float" data-wa="Salam, saya ingin bertanya tentang perkhidmatan kantin." aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.83 9.83 0 0012.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 012.41 5.83c0 4.54-3.69 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
-  <span>WhatsApp</span>
-</a>
-
 <script>
-  /* ============================================================
-     TETAPAN HUBUNGAN — ubah di sini sahaja
-     ============================================================ */
+  /* TETAPAN HUBUNGAN */
   var NL = String.fromCharCode(10);
   var SITE = {
-    email:    "hello@jobshore.dpdns.org",   // dipaparkan di topbar & footer
-    website:  "",
-    whatsapp: "",            // kosong = guna borang. Isi "60XXXXXXXXX" untuk hidupkan WhatsApp.
-    endpoint: ""             // kosong = borang hantar melalui emel. Isi endpoint Formspree/Web3Forms kalau ada.
+    email: "hello@jobshore.dpdns.org",
+    website: "",
+    endpoint: ""
   };
 
-  /* --- Butang CTA: WhatsApp kalau ada nombor, jika tidak tatal ke borang --- */
-  document.querySelectorAll("[data-wa]").forEach(function(el){
-    if (SITE.whatsapp) {
-      var msg = el.getAttribute("data-wa") || "Salam, saya ingin bertanya.";
-      el.setAttribute("href", "https://wa.me/" + SITE.whatsapp + "?text=" + encodeURIComponent(msg));
-      el.setAttribute("target", "_blank");
-      el.setAttribute("rel", "noopener");
-    } else {
-      el.setAttribute("href", "#borang");
-      el.removeAttribute("target");
-      el.addEventListener("click", function(){
-        var first = document.querySelector("#qf input, #qf select, #qf textarea");
-        if (first) setTimeout(function(){ first.focus({preventScroll:true}); }, 420);
-      });
-    }
-  });
-
-  /* --- Butang terapung: hanya muncul kalau WhatsApp dihidupkan --- */
-  var float = document.querySelector(".wa-float");
-  if (float) {
-    if (SITE.whatsapp) {
-      float.setAttribute("href", "https://wa.me/" + SITE.whatsapp +
-        "?text=" + encodeURIComponent("Salam, saya ingin bertanya."));
-      float.setAttribute("target", "_blank");
-      float.setAttribute("rel", "noopener");
-    } else {
-      float.remove();
-    }
-  }
-
-  /* --- Borang: hantar ke endpoint, atau buka emel --- */
   var qf = document.getElementById("qf");
   if (qf) qf.addEventListener("submit", function(e){
     e.preventDefault();
     var d = new FormData(qf), lines = ["Permintaan Sebut Harga — Kantin"];
     d.forEach(function(v, k){ if (v) lines.push(k.toUpperCase() + ": " + v); });
     var body = lines.join(NL);
-
     if (SITE.endpoint) {
-      fetch(SITE.endpoint, {
-        method: "POST",
-        headers: { "Accept": "application/json" },
-        body: d
-      }).then(function(r){
-        if (r.ok) {
-          qf.innerHTML = '<div style="padding:34px 8px;text-align:center">' +
-            '<p style="font-size:15px;color:#1c1a17;font-weight:700;margin-bottom:8px">Terima kasih.</p>' +
-            '<p style="font-size:13.5px;color:#6b6259">Permintaan anda sudah dihantar. Kami akan hubungi anda dalam 1 hari bekerja.</p></div>';
-        } else { alert("Maaf, penghantaran gagal. Sila emel " + SITE.email + " terus."); }
-      }).catch(function(){ alert("Maaf, penghantaran gagal. Sila emel " + SITE.email + " terus."); });
+      fetch(SITE.endpoint, { method: "POST", headers: { "Accept": "application/json" }, body: d })
+        .then(function(r){
+          if (r.ok) qf.innerHTML = '<p role="status">Terima kasih. Permintaan anda sudah dihantar.</p>';
+          else alert("Maaf, penghantaran gagal. Sila emel " + SITE.email + " terus.");
+        }).catch(function(){ alert("Maaf, penghantaran gagal. Sila emel " + SITE.email + " terus."); });
       return;
     }
-
-    window.location.href = "mailto:" + SITE.email +
-      "?subject=" + encodeURIComponent("Permintaan Sebut Harga Kantin") +
-      "&body=" + encodeURIComponent(body);
+    window.location.href = "mailto:" + SITE.email + "?subject=" +
+      encodeURIComponent("Permintaan Sebut Harga Kantin") + "&body=" + encodeURIComponent(body);
     var note = qf.querySelector(".form-note");
-    if (note) note.textContent = "Aplikasi emel anda akan dibuka. Kalau tidak terbuka, emel terus ke " + SITE.email + ".";
+    if (note) note.textContent = "Aplikasi emel anda akan dibuka. Jika tidak, emel terus ke " + SITE.email + ".";
   });
 </script>
 </body>
