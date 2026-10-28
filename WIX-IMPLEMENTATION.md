@@ -1,18 +1,26 @@
 # Wix implementation & import readiness
 
-These pages are responsive design prototypes, not published Wix sites. Wix does not provide a generic one-click conversion of arbitrary static HTML into editable native Wix pages. The layouts can be recreated in Wix Editor / Wix Studio with native components, but they are not a Wix template file and cannot be imported as a finished native site by clicking once.
+These are responsive static-HTML design prototypes—not published Wix sites and not a one-click Wix deploy. The goal is that a Wix Studio builder can manually recreate each complete site with a 1:1 visual target, using the source pages and the detailed handoff below. No Wix-authorized importer has been implemented or tested, and the manifest is not a Wix-native import file.
 
-`wix/site-manifest.json` records the seven separate concepts, their distinct navigation labels and scope, four-page routes, theme tokens, media paths and CTA/form behavior. Home-page section order varies by concept; the handoff is an import source for a future Wix-connected importer, not a Wix-native import file by itself. A true one-click native import would require a Wix app/automation built against Wix’s supported APIs and authorized by the customer for their Wix site. No import button is shown on these portfolio pages.
+`wix/site-manifest.json` records each concept’s routes, navigation, scope, palette, media, and form behavior. `wix/design-spec.json` is the fidelity handoff: it records the exact source route order, page titles, palette tokens, layout-specific CSS rules, image assets, and reference viewports. The HTML/CSS in each `bridal-*/` folder remains the visual source of truth. A manual Wix build must preserve each page’s structure and design—not replace the seven sites with one template or a merely recolored theme.
+
+## 1:1 visual recreation target
+
+A complete Wix Studio rebuild should match the corresponding static site at the reference widths in `wix/design-spec.json`: desktop 1440×900, tablet 768×1024, and mobile 390×844. The spec also includes each page’s actual section order, content titles, theme tokens, image assets and crop rules, plus layout-specific CSS declarations. Match the complete four-page site—not only its homepage hero.
+
+Use the static HTML as the source for exact copy and component order. In Wix Studio, recreate those sections with native sections, containers, grid/stack layouts, menus, repeaters, accordions, images and forms. Set the recorded colors and fonts, reproduce column proportions and spacing at each breakpoint, and choose the same supplied image with the same crop/position. Keep each concept’s distinct navigation and page titles. Replace the preview’s translation widget with Wix Multilingual and the demo mailto form with a native Wix Form configured for the approved real client contact when a real business commissions the site.
+
+For sign-off, compare the Wix build side-by-side with the corresponding static page at all three reference widths. Check section heights/order, text wrapping, image focal point, spacing, colors, borders, buttons, navigation, form fields and footer. Adjust Wix breakpoints and values until the comparison matches. Do not claim a Wix site has achieved 1:1 fidelity until it has actually been built and checked; the current repository contains the reconstruction specification, not a published/verified Wix implementation.
 
 ## Suggested Wix build mapping
 
-1. Use the matching concept’s layout direction rather than forcing all seven into one template: Chinese editorial split hero; Malay centered, arched-image composition; Indian image-first asymmetric hero; general inclusive modular layout; Kuala Lumpur oversized city-atelier typography; Johor rounded, welcoming composition; Penang framed heritage-inspired composition. Adapt each responsively for mobile.
-2. Rebuild each concept’s own page sequence and featured service scope as separate sections. Use Wix containers / grids and native text elements; avoid fixed-width positioning.
-3. Add a native Wix Form in the enquiry section. Ask for name, email, optional wedding date or season, and a note. Do not add a telephone field or WhatsApp action.
-4. Point each CTA to the enquiry section anchor. Do not add a floating contact button.
-5. Upload the matching `assets/img/bridal-*.jpg` hero image and `assets/img/bridal-*-detail.jpg` close-up image to Wix Media Manager. Keep each supplied alt text descriptive. All sample shop details, product names and prices are fictional and must be replaced with verified information before publishing a real shop.
+1. Use the matching concept’s layout direction rather than forcing all seven into one template: Chinese editorial split hero; Malay centered, arched-image composition; Indian image-first asymmetric hero; general inclusive modular layout; Kuala Lumpur oversized city-atelier typography; Johor rounded, welcoming composition; Penang framed heritage-inspired composition.
+2. Rebuild the exact route-specific section sequence recorded for that concept in `wix/design-spec.json`; use Wix containers / grids and native text elements rather than fixed-width positioning.
+3. Add a native Wix Form in the enquiry section. Match the concept-specific select label and options, plus name, email, optional wedding date or season, and note. Do not add a telephone field or WhatsApp action.
+4. Point each enquiry CTA to the form anchor. Do not add a floating contact button.
+5. Upload the matching `assets/img/bridal-*.jpg` hero image and `assets/img/bridal-*-detail.jpg` close-up image to Wix Media Manager. Preserve the supplied alt text and source crop. All sample shop details, product names and prices are fictional and must be replaced with verified information before publishing a real shop.
 6. Set up language switching with Wix Multilingual for English, Bahasa Melayu and Chinese. The prototype's browser-translation widget is only for the static preview; use Wix's native language management on the actual Wix build.
-7. Set mobile breakpoints and check the page at phone width: navigation, image crop, heading wraps, fields, buttons and footer should remain readable and tappable.
+7. Set Wix Studio breakpoints to reproduce the 760px source breakpoint and compare at the desktop, tablet and mobile reference sizes. Check image crop, heading wraps, fields, buttons, navigation and footer.
 
 ## Design system
 

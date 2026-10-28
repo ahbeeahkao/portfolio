@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.0",
-  "purpose": "source manifest for a future Wix-connected importer",
+  "purpose": "manual Wix Studio reconstruction handoff and source manifest; not an import file",
   "nativeWixImportFile": false,
-  "note": "Wix does not natively import this manifest or arbitrary HTML as an editable site. A Wix app/automation must map these records to native pages after customer authorization.",
+  "note": "Use the static HTML and wix/design-spec.json to manually recreate each concept in Wix Studio with a 1:1 visual target. This manifest is not a Wix-native import file and no one-click deployment/importer is implemented or verified.",
   "languageTargets": [
     "en",
     "ms",
@@ -31,7 +31,26 @@
     "fictionalBusinessDetailDisclosure": "Shop identity, location, hours, sample styles, prices and appointment terms are fictional examples for privacy and demonstration.",
     "sectionOrderVariesByConcept": true,
     "inspirationOnly": true,
-    "noRealShopDetailsCopied": true
+    "noRealShopDetailsCopied": true,
+    "wixCompatibility": "manual Wix Studio reconstruction from native sections, containers, grids, menus, repeaters, accordions, images and forms",
+    "oneClickWixDeploy": false,
+    "fidelityReferenceViewports": [
+      {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "name": "tablet",
+        "width": 768,
+        "height": 1024
+      },
+      {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      }
+    ]
   },
   "pages": [
     {
@@ -66,7 +85,7 @@
         "experience": "Planning the Wedding Looks",
         "appointments": "Family Fitting Enquiry"
       },
-      "detailImageAlt": "Chinese bridal fabric or studio detail; fictional concept image"
+      "detailImageAlt": "Close-up of red silk and gold embroidery for a Chinese Malaysian bridal concept"
     },
     {
       "slug": "bridal-malay",
@@ -100,7 +119,7 @@
         "experience": "A Modest Styling Journey",
         "appointments": "Plan a Gown Fitting"
       },
-      "detailImageAlt": "Malay bridal fabric or studio detail; fictional concept image"
+      "detailImageAlt": "Ivory modest bridal gown and coordinated hijab styling detail"
     },
     {
       "slug": "bridal-indian",
@@ -134,7 +153,7 @@
         "experience": "Ceremony-to-Reception Styling",
         "appointments": "Plan a Styling Consultation"
       },
-      "detailImageAlt": "Indian bridal fabric or studio detail; fictional concept image"
+      "detailImageAlt": "Ruby fabric with antique-gold embroidery for an Indian Malaysian bridal concept"
     },
     {
       "slug": "bridal-general",
@@ -168,7 +187,7 @@
         "experience": "A Fitting That Starts With You",
         "appointments": "Explore Your Fitting"
       },
-      "detailImageAlt": "General bridal fabric or studio detail; fictional concept image"
+      "detailImageAlt": "A varied rail of bridal silhouettes in an inclusive boutique concept"
     },
     {
       "slug": "bridal-kl",
@@ -202,7 +221,7 @@
         "experience": "From First Edit to Final Fit",
         "appointments": "Request a Private Atelier Fitting"
       },
-      "detailImageAlt": "Kl bridal fabric or studio detail; fictional concept image"
+      "detailImageAlt": "Minimalist ivory couture gown in a contemporary bridal studio"
     },
     {
       "slug": "bridal-johor",
@@ -236,7 +255,7 @@
         "experience": "Planning the Day Together",
         "appointments": "Plan a Studio Visit"
       },
-      "detailImageAlt": "Johor bridal fabric or studio detail; fictional concept image"
+      "detailImageAlt": "A bridal fitting room and garment rail in a regional boutique concept"
     },
     {
       "slug": "bridal-penang",
@@ -270,7 +289,8 @@
         "experience": "A Studio Visit With Context",
         "appointments": "Plan a Studio Consultation"
       },
-      "detailImageAlt": "Penang bridal fabric or studio detail; fictional concept image"
+      "detailImageAlt": "Close-up textile detail for a fictional Penang bridal concept"
     }
-  ]
+  ],
+  "designSpecPath": "wix/design-spec.json"
 }
